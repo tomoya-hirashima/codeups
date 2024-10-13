@@ -1,0 +1,193 @@
+@use "global" as *;
+
+.contact {
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  position: relative;
+
+  @include mq("md") {
+    padding-top: rem(140);
+    padding-bottom: rem(160);
+  }
+}
+
+
+
+
+.contact__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(40);
+
+  @include mq("md") {
+    flex-direction: row;
+    padding: rem(80) rem(112) rem(80) rem(50);
+    box-shadow: 0 rem(4) rem(4) 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+.contact__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: rem(109);
+  height: rem(50);
+  background-image: url(../images/common/contact-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+
+  @include mq("md") {
+    top: rem(-40);
+    right: calc(50% - min(50vw,62.035%));
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+
+.contact__container1 {
+  max-width: 83.507%;
+  width: 100%;
+  margin-inline: auto;
+
+  @include mq("md") {
+    max-width: 56.962%;
+    margin: 0;
+    padding-right: rem(82);
+    border-right: rem(1) solid $green;
+  }
+}
+
+.contact__contents {
+  margin-top: rem(16);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(16);
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: $regular;
+  font-family: "Noto Sans JP";
+
+  @include mq("md") {
+    margin-top: rem(24);
+    flex-direction: row;
+    column-gap: rem(21);
+  }
+}
+
+.contact__contents li:not(:first-child) {
+  margin-top: rem(4);
+}
+
+.contact__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(6);
+
+  @include mq("md") {
+    padding-bottom: rem(8);
+  }
+}
+
+.contact__logo img {
+  width: rem(174);
+  height: rem(65);
+
+  @include mq("md") {
+    width: rem(200);
+    height: rem(75);
+  }
+}
+
+.contact__info {
+  text-align: center;
+  white-space: nowrap;
+
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.contact__container2 {
+  max-width: 84%;
+  width: 100%;
+  margin-inline: auto;
+
+  @include mq("md") {
+    max-width: 34.313%;
+    margin-inline: none;
+    margin-left: rem(80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contact__map {
+  width: rem(295);
+  height: rem(160);
+  background-color: #d9d9d9;
+  margin-inline: auto;
+
+  @include mq("md") {
+    width: rem(273);
+    height: rem(148);
+  }
+}
+
+.tel a {
+  @include mq("md") {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+.top-contact__title--main.section__title--main {
+  font-size: rem(80);
+  line-height: 1;
+}
+
+.top-contact__induction {
+  margin-top: rem(8);
+  font-size: rem(14);
+  line-height: 1.2857;
+  color: $green;
+  text-align: center;
+}
+
+.top-contact-button {
+  margin-top: rem(40);
+}
+
+
+// ページトップボタン
+.pagetop-button {
+  position: absolute;
+  bottom: rem(16);
+  right: rem(16);
+
+  @include mq("md") {
+    bottom: rem(20);
+    right: rem(20);
+  }
+}
+.pagetop-button a{
+  display: inline-block;
+  width: rem(48);
+  height: rem(48);
+
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+  }
+}

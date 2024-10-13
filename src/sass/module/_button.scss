@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.button {
+  display: block;
+  margin-inline: auto;
+  width: rem(202);
+  padding: 0;
+  border: rem(1) solid $green;
+  background-color: $green;
+  color: $white;
+  box-shadow: 0 0 0 0, rem(5) rem(5) 0 0 $white, rem(5) rem(5) 0 rem(1) $green;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.button:hover {
+  background-color: $white;
+  color: $green;
+}
+
+.button__link {
+  display: block;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  font-size: rem(14);
+  line-height: 1.571;
+  text-align: left;
+}
+
+.button__link::first-letter {
+  text-transform: capitalize;
+}
+
+.button__link::before,
+.button__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: rem(35);
+  height: rem(1);
+  background-color: $white;
+  transition: 0.3s background-color;
+}
+
+.button__link::before {
+  width: 2.5rem; /*40px*/
+  transform: translateY(-50%);
+}
+
+.button__link::after {
+  width: rem(9.2);
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: right center;
+}
+
+.button__link:hover::before,
+.button__link:hover::after {
+  background-color: $green;
+}

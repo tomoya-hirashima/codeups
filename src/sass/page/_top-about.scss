@@ -1,0 +1,166 @@
+@use "global" as *;
+
+.top-about {
+  padding-top: rem(140);
+  padding-bottom: rem(164);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.top-about__wrapper{
+width: 100%;
+position: relative;
+}
+
+
+.top-about__wrapper::after {
+
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    bottom: rem(-90);
+    right: calc(50% - min(calc(50vw + rem(97)),58.98%));
+    display: inline-block;
+    width: rem(194);
+    height: rem(181);
+    background-image: url(../images/common/about-coral-anemone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+}
+
+.about__contents{
+  margin-top: rem(40);
+  width: 100%;
+  position: relative;
+}
+
+.about__img-container {
+  width: 100%;
+}
+
+.about__img1 {
+padding-top: 12.264%; /* height 26 / 212   */
+padding-left: 18.550%; /* width  64 / 345   */
+
+  // position: absolute;
+  // top: rem(26);
+  // bottom: 0;
+  // right: 0;
+  // max-width: 81.4492%; /* 281/345 */
+  // width: 100%;
+  // z-index: 1;
+
+  @include mq("md") {
+    padding-top: 12.1028%; /* height 80 / 661   */
+    padding-left: 18.1585%; /* width  200 / 1080   */
+  }
+}
+
+.about__img1 img {
+  width: 100%;
+}
+
+.about__img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 37.101%; /* 128/345 */
+  width: 100%;
+  z-index: 1;
+
+  @include mq("md") {
+    max-width: 37.037%; /* 400/1080 */
+  }
+}
+
+.about__img2 img {
+  width: 100%;
+
+}
+
+.about__text-container {
+  margin-top: rem(40);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  z-index: 3;
+
+  @include mq("md") {
+    margin-top: 0;
+    max-width: rem(840);
+    flex-direction: row;
+    column-gap: rem(40);
+    position: absolute;
+    top: 30.257%;
+    left: 18.518%;
+  }
+}
+
+.about__message-title {
+  font-size: rem(40);
+  line-height: 1;
+  font-weight: $regular;
+  color: $green;
+
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: 1.25;
+    color: $white;
+  }
+}
+
+.about__message-box {
+  margin-top: 1rem;
+
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+
+.top-about__message-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: $regular;
+  color: $black;
+
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.top-about__message-button {
+  margin-top: rem(50);
+
+  @include mq("md") {
+  margin-top: rem(40);
+  }
+}
+
+
+// .about__design{
+//   display: none;
+
+//   @include mq("md") {
+//     position: absolute;
+//     bottom: rem(-74);
+//     right: calc();
+//     display: inline-block;
+//     width: rem(194);
+//     height: rem(181);
+//     max-width:  clamp(rem(50), 17.9%, rem(194));
+//   }
+// }
+
+
+// .about__design img{
+
+//   @include mq("md") {
+//     width:100%;
+//     aspect-ratio: 97 / 91;
+//   }
+
+// }
+

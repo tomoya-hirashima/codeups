@@ -1,0 +1,115 @@
+@use "global" as *;
+
+.campaign-card {
+  display: block;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.campaign-card__img {
+  width: 100%;
+}
+
+.campaign-card__img img{
+  width: 100%;
+  aspect-ratio: 280 / 188;
+  object-fit: cover;
+}
+
+
+.campaign-card__body {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  max-width: 88.571%;
+  width: 100%;
+  margin-inline: auto;
+
+  @include mq("md") {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.campaign-card__category {
+  display: inline-block;
+  padding: rem(4) rem(12);
+  font-size: rem(12);
+  line-height: 1.8333;
+  color: $green;
+  border: rem(1) solid $green;
+
+  @include mq("md") {
+  padding: rem(6) rem(16);
+  }
+}
+
+.campaign-card__title {
+  text-align: left;
+  margin-top: rem(4);
+  padding-bottom: rem(8);
+  font-size: 1rem;
+  font-weight: $medium;
+  line-height: 1.5;
+  color: $black;
+  border-bottom: rem(1) solid $green;
+}
+
+.campaign-card__info {
+  margin-top: rem(8);
+  width: 100%;
+
+  @include mq("md") {
+    margin-top: rem(16);
+  }
+}
+
+.campaign-card__content {
+  text-align: center;
+  font-weight: $regular;
+  font-size: rem(14);
+  line-height: 1.7142;
+
+  @include mq("md") {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.campaign-card__price {
+  margin-top: rem(8);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap:1rem;
+
+  @include mq("md") {
+    gap: 1.5rem;
+  }
+}
+
+.campaign-card__normal-price {
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: $bold;
+  font-family: $third-font-family;
+    background-image: linear-gradient($orange, $orange);
+    background-position: 0 50%;
+    background-size: 100% rem(3);
+    background-repeat: repeat-x;
+    text-decoration: none;
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.campaign-card__discount {
+  font-size: rem(32);
+  line-height: 1;
+  font-weight: $bold;
+  color: $green;
+  font-family: $third-font-family;
+
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
