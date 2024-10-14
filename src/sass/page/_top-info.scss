@@ -10,13 +10,14 @@
 }
 
 .info__wrapper {
-  margin-top: rem(24);
+  margin-top: rem(27);
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: rem(24);
 
   @include mq("md") {
+    margin-top: rem(37);
     flex-direction: row;
     column-gap: rem(48);
   }
@@ -30,9 +31,6 @@
   }
 }
 
-
-
-
 .info img {
   width: 100%;
   aspect-ratio: 345/227;
@@ -42,15 +40,10 @@
   }
 }
 
-// .info__details {
-// }
 
 .info__description {
 max-width: rem(492);
 
-  @include mq("md") {
-    margin-top: rem(61);
-  }
 }
 
 .info-button {

@@ -15,11 +15,12 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: rem(16);
-  align-items: flex-end;
+  align-items: flex-start;
 
   @include mq("md") {
     flex-direction: row;
     column-gap: rem(40);
+    align-items: flex-end;
   }
 }
 
@@ -70,5 +71,7 @@ footer {
 
   @include mq("md") {
     margin-top: rem(80);
+    font-size: rem(14);
+    line-height: 1.2857;
   }
 }

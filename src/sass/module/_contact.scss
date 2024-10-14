@@ -12,8 +12,6 @@
 }
 
 
-
-
 .contact__wrapper {
   width: 100%;
   position: relative;
@@ -32,7 +30,7 @@
 .contact__wrapper::before {
   content: "";
   position: absolute;
-  top: 0;
+  top:  rem(-25);
   right: 0;
   display: inline-block;
   width: rem(109);
@@ -92,9 +90,6 @@
   border-bottom: rem(1) solid $green;
   padding-bottom: rem(6);
 
-  @include mq("md") {
-    padding-bottom: rem(8);
-  }
 }
 
 .contact__logo img {
@@ -153,16 +148,25 @@
 }
 
 .top-contact__title--main.section__title--main {
-  font-size: rem(80);
+  font-size: rem(77);
   line-height: 1;
+
+  @include mq("md") {
+  font-size: rem(80);
+  }
 }
 
 .top-contact__induction {
-  margin-top: rem(8);
+  margin-top: rem(4);
   font-size: rem(14);
   line-height: 1.2857;
   color: $green;
   text-align: center;
+
+  @include mq("md") {
+  margin-top: rem(8);
+    
+  }
 }
 
 .top-contact-button {

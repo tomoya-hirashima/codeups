@@ -66,11 +66,17 @@
 .top-price__menu {
   width: 100%;
   max-width: rem(492);
-  margin: auto;
+  margin-inline: auto;
+  font-family: "Noto Sans JP";
 }
 
 .top-price__menu table:not(:first-child) {
+  margin-top: rem(35);
+
+  @include mq("md") {
   margin-top: rem(40);
+    
+  }
 }
 
 .top-price__menu-col1 {
@@ -95,7 +101,12 @@
   font-size: rem(14);
   line-height: 1.714;
   font-weight: $regular;
-  padding: rem(8) 0 0;
+  padding: rem(6) 0 0;
+
+  @include mq("md") {
+  font-size: rem(16);
+  line-height: 1.3;
+  }
 }
 
 .top-price__menu td:nth-child(2) {

@@ -10,7 +10,6 @@
   font-size: rem(32);
   font-weight: $regular;
   line-height: 1.25;
-  text-transform: capitalize;
 
   @include mq("md") {
     font-size: rem(40);
@@ -20,6 +19,7 @@
 
 .section__title--main span {
   color: $green;
+  text-transform: capitalize;
 }
 
 .section__title--sub {
@@ -28,6 +28,7 @@
   font-weight: $regular;
   line-height: 1.5;
   color: $green;
+  font-family: "Noto Sans JP";
 
   @include mq("md") {
     margin-top: rem(8);

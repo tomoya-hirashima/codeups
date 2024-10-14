@@ -9,12 +9,11 @@
   width: 100%;
 }
 
-.campaign-card__img img{
+.campaign-card__img img {
   width: 100%;
   aspect-ratio: 280 / 188;
   object-fit: cover;
 }
-
 
 .campaign-card__body {
   padding-top: 1rem;
@@ -24,21 +23,21 @@
   margin-inline: auto;
 
   @include mq("md") {
-    padding-top: 1.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: rem(21);
+    padding-bottom: rem(40);
   }
 }
 
 .campaign-card__category {
   display: inline-block;
-  padding: rem(4) rem(12);
+  padding: 0.25rem 0.7rem;
   font-size: rem(12);
   line-height: 1.8333;
   color: $green;
   border: rem(1) solid $green;
 
   @include mq("md") {
-  padding: rem(6) rem(16);
+    padding: 0.375rem 0.875rem;
   }
 }
 
@@ -79,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  gap:1rem;
+  gap: 1rem;
 
   @include mq("md") {
     gap: 1.5rem;
@@ -91,11 +90,11 @@
   line-height: 1;
   font-weight: $bold;
   font-family: $third-font-family;
-    background-image: linear-gradient($orange, $orange);
-    background-position: 0 50%;
-    background-size: 100% rem(3);
-    background-repeat: repeat-x;
-    text-decoration: none;
+  background-image: linear-gradient($orange, $orange);
+  background-position: 0 50%;
+  background-size: 100% rem(3);
+  background-repeat: repeat-x;
+  text-decoration: none;
 
   @include mq("md") {
     font-size: rem(24);

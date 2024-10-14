@@ -24,7 +24,11 @@
 }
 
 .blog-card__body {
-  margin-top: rem(24);
+  margin-top: rem(17);
+
+  @include mq("md") {
+  margin-top: rem(17);
+  }
 }
 
 .blog-card__date {
@@ -39,6 +43,7 @@
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $medium;
+  font-family: "Noto Sans JP";
 }
 
 .blog-card__text {
@@ -46,4 +51,5 @@
   font-size: 1rem;
   line-height: 1.5;
   font-weight: $regular;
+  font-family: "Noto Sans JP";
 }

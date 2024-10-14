@@ -32,9 +32,14 @@ position: relative;
 }
 
 .about__contents{
-  margin-top: rem(40);
+  margin-top: rem(28);
   width: 100%;
   position: relative;
+
+  @include mq("md") {
+  margin-top: rem(40);
+    
+  }
 }
 
 .about__img-container {
@@ -42,19 +47,10 @@ position: relative;
 }
 
 .about__img1 {
-padding-top: 12.264%; /* height 26 / 212   */
+padding-top: 7.2%;
 padding-left: 18.550%; /* width  64 / 345   */
 
-  // position: absolute;
-  // top: rem(26);
-  // bottom: 0;
-  // right: 0;
-  // max-width: 81.4492%; /* 281/345 */
-  // width: 100%;
-  // z-index: 1;
-
   @include mq("md") {
-    padding-top: 12.1028%; /* height 80 / 661   */
     padding-left: 18.1585%; /* width  200 / 1080   */
   }
 }
@@ -113,7 +109,7 @@ padding-left: 18.550%; /* width  64 / 345   */
 }
 
 .about__message-box {
-  margin-top: 1rem;
+  margin-top: rem(3);
 
   @include mq("md") {
     margin-top: 0;
@@ -132,7 +128,7 @@ padding-left: 18.550%; /* width  64 / 345   */
 }
 
 .top-about__message-button {
-  margin-top: rem(50);
+  margin-top: rem(48);
 
   @include mq("md") {
   margin-top: rem(40);
