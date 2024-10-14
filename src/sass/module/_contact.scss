@@ -3,7 +3,6 @@
 .contact {
   padding-top: rem(80);
   padding-bottom: rem(100);
-  position: relative;
 
   @include mq("md") {
     padding-top: rem(140);
@@ -118,7 +117,6 @@
 
   @include mq("md") {
     max-width: 34.313%;
-    margin-inline: none;
     margin-left: rem(80);
     display: flex;
     flex-direction: column;
@@ -132,6 +130,7 @@
   max-width: rem(295);
   width: 100%;
   aspect-ratio: 295 / 160;
+  margin-inline: auto;
 
   @include mq("md") {
     max-width: rem(273);
@@ -180,27 +179,4 @@
 
 .top-contact-button {
   margin-top: rem(40);
-}
-
-
-// ページトップボタン
-.pagetop-button {
-  position: absolute;
-  bottom: rem(16);
-  right: rem(16);
-
-  @include mq("md") {
-    bottom: rem(20);
-    right: rem(20);
-  }
-}
-.pagetop-button a{
-  display: inline-block;
-  width: rem(48);
-  height: rem(48);
-
-  @include mq("md") {
-    width: rem(80);
-    height: rem(80);
-  }
 }

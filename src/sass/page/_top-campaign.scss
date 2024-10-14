@@ -3,7 +3,7 @@
 .top-campaign {
   width: 100%;
   padding-top: rem(40);
-  overflow: hidden;
+  overflow-x: hidden;
 
   @include mq("md") {
     margin-top: rem(120);

@@ -81,4 +81,26 @@ $(function () {
       }
     });
   });
+
+  // ページトップボタン
+  $(function () {
+    const pageTop = $(".js-pagetop");
+    pageTop.hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 20) {
+        pageTop.fadeIn();
+      } else {
+        pageTop.fadeOut();
+      }
+    });
+    pageTop.click(function () {
+      $("body, html").animate(
+        {
+          scrollTop: 0,
+        },
+        300
+      );
+      return false;
+    });
+  });
 });

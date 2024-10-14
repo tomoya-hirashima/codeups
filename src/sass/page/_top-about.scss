@@ -120,6 +120,7 @@ padding-left: 18.550%; /* width  64 / 345   */
   font-size: 1rem;
   line-height: 1.5;
   font-weight: $regular;
+  font-family: "Noto Sans JP";
   color: $black;
 
   @include mq("md") {
@@ -134,29 +135,3 @@ padding-left: 18.550%; /* width  64 / 345   */
   margin-top: rem(40);
   }
 }
-
-
-// .about__design{
-//   display: none;
-
-//   @include mq("md") {
-//     position: absolute;
-//     bottom: rem(-74);
-//     right: calc();
-//     display: inline-block;
-//     width: rem(194);
-//     height: rem(181);
-//     max-width:  clamp(rem(50), 17.9%, rem(194));
-//   }
-// }
-
-
-// .about__design img{
-
-//   @include mq("md") {
-//     width:100%;
-//     aspect-ratio: 97 / 91;
-//   }
-
-// }
-

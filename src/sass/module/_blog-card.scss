@@ -4,6 +4,17 @@
   max-width: rem(333);
   width: 100%;
   box-shadow: rem(2) rem(2) rem(10) 0  rgba(0, 0, 0, 0.25);
+
+  @include mq("md") {
+    transition: transform .3s ease;
+  }
+}
+
+.blog-card:hover{
+
+  @include mq("md") {
+    transform: scale(1.02);
+  }
 }
 
 .blog-card a {

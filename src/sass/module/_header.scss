@@ -104,13 +104,13 @@
   color: $white;
   font-size: rem(10);
   line-height: 1.5;
+  font-family: "Noto Sans JP";
   display: inline-block;
   position: relative;
   text-decoration: none;
   padding-bottom: rem(4);
   white-space:nowrap;
 }
-
 
 
 .nav__item--sub::after {
