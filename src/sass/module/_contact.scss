@@ -128,15 +128,24 @@
 }
 
 .contact__map {
-  width: rem(295);
-  height: rem(160);
-  background-color: #d9d9d9;
-  margin-inline: auto;
+  position: relative;
+  max-width: rem(295);
+  width: 100%;
+  aspect-ratio: 295 / 160;
 
   @include mq("md") {
-    width: rem(273);
-    height: rem(148);
+    max-width: rem(273);
+  aspect-ratio: 273 / 148;
+
   }
+}
+
+.contact__map iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .tel a {

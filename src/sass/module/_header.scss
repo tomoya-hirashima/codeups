@@ -88,6 +88,7 @@
   cursor: pointer;
 }
 
+
 .nav__item--main {
   color: $white;
   font-size: rem(18);
@@ -103,4 +104,31 @@
   color: $white;
   font-size: rem(10);
   line-height: 1.5;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: rem(4);
+  white-space:nowrap;
+}
+
+
+
+.nav__item--sub::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: rem(1);
+	background: $white;
+	transition: all .3s ease 0s;
+}
+
+.nav__item--sub:hover{
+	cursor: pointer;
+}
+
+.nav__item--sub:hover::after {
+	width: 100%;
 }
