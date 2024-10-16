@@ -38,11 +38,11 @@
 
 .header__logo a {
   height: inherit;
-  padding: rem(21) 0;
+  padding: rem(21) rem(15);
   cursor: pointer;
 
   @include mq("md") {
-    padding: rem(21) rem(40) rem(20);
+    padding: 1.3125rem 1.25rem 1.25rem 2.5rem;
   }
 }
 
@@ -79,6 +79,7 @@
 }
 
 .nav__item a {
+ position: relative;
   height: inherit;
   display: grid;
   place-content: center;
@@ -86,6 +87,27 @@
   padding-left: rem(20);
   text-align: center;
   cursor: pointer;
+}
+
+.nav__item a::after {
+	position: absolute;
+	content: '';
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: rem(1);
+	background: $white;
+	transition: all .3s ease 0s;
+}
+
+
+.nav__item a:hover {
+	cursor: pointer;
+}
+
+.nav__item a:hover::after {
+	width: 60%;
 }
 
 
@@ -113,22 +135,4 @@
 }
 
 
-.nav__item--sub::after {
-	position: absolute;
-	content: '';
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 0;
-	height: rem(1);
-	background: $white;
-	transition: all .3s ease 0s;
-}
 
-.nav__item--sub:hover{
-	cursor: pointer;
-}
-
-.nav__item--sub:hover::after {
-	width: 100%;
-}

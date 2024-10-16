@@ -9,6 +9,14 @@
   }
 }
 
+.top-info__inner.inner{
+  max-width: rem(600);
+
+  @include mq("md") {
+  max-width: rem(1130);
+  }
+}
+
 .info__wrapper {
   margin-top: rem(27);
   display: flex;

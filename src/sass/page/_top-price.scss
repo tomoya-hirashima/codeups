@@ -11,6 +11,14 @@
   }
 }
 
+.top-price__inner.inner{
+  max-width: rem(600);
+
+  @include mq("md") {
+  max-width: rem(1130);
+  }
+}
+
 .top-price__wrapper{
   width: 100%;
   position: relative;

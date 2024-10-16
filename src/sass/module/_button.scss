@@ -23,10 +23,9 @@
   display: inline-block;
   width: rem(202);
   height: rem(54);
-  padding: 0;
+  padding: 0 rem(4) rem(4) 0;
   border: rem(1) solid $green;
   z-index: -1;
-  // background-color: $white;
 }
 
 .button::after{
@@ -55,7 +54,7 @@ z-index: -1;
 .button__link {
   display: block;
   width: 100%;
-  padding: 1rem 2.5rem;
+  padding: rem(16) rem(40) rem(16);
   font-size: rem(14);
   line-height: 1.571;
   text-align: left;

@@ -6,12 +6,15 @@
   grid-template-rows: repeat(2, 1fr);
   // grid-column-gap: rem(13);
   grid-row-gap: rem(28);
+  max-width: rem(500);
+  margin-inline: auto;
 
   @include mq("md") {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
     grid-column-gap: rem(25);
     grid-row-gap: 0;
+    max-width: rem(1130);
   }
 }
 

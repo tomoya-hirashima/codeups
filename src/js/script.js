@@ -5,14 +5,17 @@ jQuery(function ($) {
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-open");
     $(".js-drawer").fadeToggle();
-    // $("body").toggleClass("is-scroll");
-
-    if ($("body").css("overflow") === "hidden") {
-      $("body").css({ height: "", overflow: "" });
-    } else {
-      $("body").css({ height: "100%", overflow: "hidden" });
-    }
+    $("body").toggleClass("is-scroll");
   });
+
+    // ドロワー  リサイズイベント
+    $(window).on("resize", function () {
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        $(".js-hamburger").removeClass("is-open");
+        $(".js-drawer").fadeOut();
+        $("body").removeClass("is-scroll");
+      }
+    });
 });
 
 $(function () {
@@ -39,14 +42,15 @@ $(function () {
   const swiperCampaign = new Swiper(".swiper-campaign", {
     loop: true,
     speed: 2000,
-    // spaceBetween:24,
     // centeredSlides: true,
-    initialSlide: 0,
+    // initialSlide: 1,
     slidesPerView: "auto",
+    freeModeSticky: true,
+    grabCursor: true,
 
-    // autoplay: {
-    //     delay: 1000,
-    // },
+    autoplay: {
+        delay: 1000,
+    },
 
     // ナビゲーションボタンの設定
     navigation: {

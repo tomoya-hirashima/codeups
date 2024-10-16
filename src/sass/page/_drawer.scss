@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .drawer {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -9,10 +10,11 @@
   height: 100vh;
   z-index: 8888;
   background-color: $green;
-  display: none;
+  overflow-y: scroll;
 }
 
 .drawer__inner {
   padding-top: rem(101);
+  padding-bottom: rem(101);
 
 }

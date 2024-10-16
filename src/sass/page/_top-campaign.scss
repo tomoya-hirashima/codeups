@@ -3,34 +3,48 @@
 .top-campaign {
   width: 100%;
   padding-top: rem(40);
-  overflow-x: hidden;
+
+  overflow: hidden;
 
   @include mq("md") {
     margin-top: rem(120);
   }
 }
 
+
+.top-campaign__inner.inner{
+  max-width: rem(600);
+  padding-bottom: rem(5);
+
+
+  @include mq("md") {
+  max-width: rem(1130);
+  }
+}
+
 .swiper-box {
   position: relative;
   margin-top: rem(26);
+  margin-right: calc(50% - 50vw);
 
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.campaign__slider {
-  overflow: visible;
-}
+// .campaign__slider {
+//   overflow: visible;
+// }
 
 .swiper-wrapper {
-  cursor: grab;
+  overflow: visible;
 }
 
 .swiper-slide.campaign-slide {
   max-width: rem(280);
   width: 100%;
   margin-right: rem(24);
+  box-sizing: content-box;
 
   @include mq("md") {
     max-width: rem(333.5);

@@ -7,6 +7,13 @@
   overflow: hidden;
 }
 
+.top-about__inner.inner{
+  max-width: rem(600);
+
+  @include mq("md") {
+  max-width: rem(1130);
+  }
+}
 
 .top-about__wrapper{
 width: 100%;
