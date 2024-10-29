@@ -25,6 +25,14 @@
   }
 }
 
+.top-blog__inner.inner{
+  max-width: rem(600);
+
+  @include mq("md") {
+  max-width: rem(1130);
+}
+}
+
 .top-blog__wrapper {
   width: 100%;
   position: relative;

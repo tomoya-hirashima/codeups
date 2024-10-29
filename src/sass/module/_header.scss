@@ -11,7 +11,7 @@
   z-index: 8888;
 
   @include mq("md") {
-    height: rem(92);
+    height: rem(90);
   }
 }
 
@@ -31,19 +31,24 @@
 
 .header__logo {
   height: inherit;
-  display: flex;
-  align-items: center;
   z-index: 9999;
+  transition: .3s opacity;
 }
 
 .header__logo a {
   height: inherit;
-  padding: rem(21) rem(15);
+  display: flex;
+  align-items: center;
+  padding: 0 rem(15);
   cursor: pointer;
 
   @include mq("md") {
-    padding: 1.3125rem 1.25rem 1.25rem 2.5rem;
+    padding: 0 1.25rem 0 2.5rem;
   }
+}
+
+.header__logo a:hover{
+  opacity: 0.7;
 }
 
 .header__logo img {

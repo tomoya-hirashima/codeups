@@ -9,11 +9,11 @@
   }
 }
 
-.top-info__inner.inner{
+.top-info__inner.inner {
   max-width: rem(600);
 
   @include mq("md") {
-  max-width: rem(1130);
+    max-width: rem(1130);
   }
 }
 
@@ -39,19 +39,18 @@
   }
 }
 
-.info img {
+.info__img img {
   width: 100%;
   aspect-ratio: 345/227;
+  object-fit: cover;
 
   @include mq("md") {
     aspect-ratio: 540/356;
   }
 }
 
-
 .info__description {
-max-width: rem(492);
-
+  max-width: rem(492);
 }
 
 .info-button {

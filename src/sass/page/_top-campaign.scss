@@ -4,7 +4,7 @@
   width: 100%;
   padding-top: rem(40);
 
-  overflow: hidden;
+  // overflow: hidden;
 
   @include mq("md") {
     margin-top: rem(120);
@@ -12,12 +12,7 @@
 }
 
 .top-campaign__inner.inner {
-  max-width: rem(600);
   padding-bottom: rem(5);
-
-  @include mq("md") {
-    max-width: rem(1130);
-  }
 }
 
 .swiper-box {
@@ -30,23 +25,23 @@
   }
 }
 
-// .campaign__slider {
-//   overflow: visible;
-// }
-
-.swiper-wrapper {
-  overflow: visible;
+.campaign__slider {
+width: 100%;
 }
 
-.swiper-slide.campaign-slide {
+.campaign-swiper-wrapper {
+  // width: 100%;
+}
+
+.campaign-slide {
   max-width: rem(280);
   width: 100%;
-  margin-right: rem(24);
+  // margin-right: rem(24);
   box-sizing: content-box;
 
   @include mq("md") {
     max-width: rem(333.5);
-    margin-right: rem(40);
+    // margin-right: rem(40);
   }
 }
 

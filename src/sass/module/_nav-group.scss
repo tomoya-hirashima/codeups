@@ -65,6 +65,7 @@
 .nav-group__item {
   margin-top: rem(24);
   padding-left: rem(22);
+  transition: 0.3s opacity;
 }
 
 .nav-group__item a {
@@ -76,6 +77,12 @@
   font-family: "Noto Sans JP";
   line-height: 1.125;
   color: $white;
+}
+
+@media(any-hover:hover){
+  .nav-group__item a:hover{
+    opacity: 0.7;
+  }
 }
 
 .nav-group__item.nav-group__item--main {

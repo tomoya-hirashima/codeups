@@ -10,6 +10,14 @@
   }
 }
 
+.contact__inner.inner{
+  max-width: rem(600);
+
+  @include mq("md") {
+  max-width: rem(1130);
+}
+}
+
 
 .contact__wrapper {
   width: 100%;
@@ -127,13 +135,12 @@
 
 .contact__map {
   position: relative;
-  max-width: rem(295);
   width: 100%;
   aspect-ratio: 295 / 160;
   margin-inline: auto;
 
   @include mq("md") {
-    max-width: rem(273);
+  max-width: 62.04%;
   aspect-ratio: 273 / 148;
 
   }
@@ -173,7 +180,7 @@
 
   @include mq("md") {
   margin-top: rem(8);
-    
+
   }
 }
 

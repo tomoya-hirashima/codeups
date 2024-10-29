@@ -27,7 +27,7 @@ position: relative;
     content: "";
     position: absolute;
     bottom: rem(-90);
-    right: calc(50% - min(calc(50vw + rem(97)),58.98%));
+    right: calc(50% - min(50vw,58.98%));
     display: inline-block;
     width: rem(194);
     height: rem(181);

@@ -42,15 +42,14 @@ $(function () {
   const swiperCampaign = new Swiper(".swiper-campaign", {
     loop: true,
     speed: 2000,
-    // centeredSlides: true,
-    // initialSlide: 1,
     slidesPerView: "auto",
-    freeModeSticky: true,
     grabCursor: true,
+    spaceBetween:24,
+    // initialSlide: 1,
 
-    autoplay: {
-        delay: 1000,
-    },
+    // autoplay: {
+    //     delay: 1000,
+    // },
 
     // ナビゲーションボタンの設定
     navigation: {

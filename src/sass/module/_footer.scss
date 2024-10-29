@@ -27,12 +27,20 @@ footer {
 .footer-logo {
   width: rem(120);
   height: rem(45);
+  transition: .3s opacity;
 
   @include mq("md") {
     width: rem(200);
     height: rem(75);
   }
 }
+
+@media(any-hover:hover){
+  .footer-logo a:hover{
+    opacity: 0.7;
+  }
+}
+
 
 .sns-btn {
   display: flex;
@@ -43,12 +51,27 @@ footer {
 .btn-instagram {
   width: rem(24);
   height: rem(24);
+  transition: .3s opacity;
 
   @include mq("md") {
     width: rem(32);
     height: rem(32);
   }
 }
+
+@media(any-hover:hover){
+  .btn-facebook a:hover ,
+  .btn-instagram a:hover{
+    opacity: 0.7;
+  }
+}
+
+// @media(any-hover:hover){
+// .btn-instagram a:hover{
+//     opacity: 0.7;
+//   }
+// }
+
 
 
 .footer__wrapper {
