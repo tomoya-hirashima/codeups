@@ -32,32 +32,33 @@
 .header__logo {
   height: inherit;
   z-index: 9999;
-  transition: .3s opacity;
+  transition: 0.3s opacity;
+  width: 102px;
+
+  @include mq("md") {
+    width: 133px;
+    margin-left: rem(20);
+  }
 }
 
 .header__logo a {
   height: inherit;
   display: flex;
   align-items: center;
-  padding: 0 rem(15);
   cursor: pointer;
-
-  @include mq("md") {
-    padding: 0 1.25rem 0 2.5rem;
-  }
+  width: 100%;
 }
 
-.header__logo a:hover{
+.header__logo a:hover {
   opacity: 0.7;
 }
 
 .header__logo img {
-  width: rem(102);
-  height: rem(38);
+  width: 100%;
+  aspect-ratio: 102/38;
 
   @include mq("md") {
-    width: rem(133);
-    height: rem(50);
+    aspect-ratio: 133/50;
   }
 }
 
@@ -84,7 +85,7 @@
 }
 
 .nav__item a {
- position: relative;
+  position: relative;
   height: inherit;
   display: grid;
   place-content: center;
@@ -95,26 +96,24 @@
 }
 
 .nav__item a::after {
-	position: absolute;
-	content: '';
-	bottom: 1.5rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 0;
-	height: rem(1);
-	background: $white;
-	transition: all .3s ease 0s;
+  position: absolute;
+  content: "";
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: rem(1);
+  background: $white;
+  transition: all 0.3s ease 0s;
 }
 
-
 .nav__item a:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .nav__item a:hover::after {
-	width: 60%;
+  width: 60%;
 }
-
 
 .nav__item--main {
   color: $white;
@@ -136,8 +135,5 @@
   position: relative;
   text-decoration: none;
   padding-bottom: rem(4);
-  white-space:nowrap;
+  white-space: nowrap;
 }
-
-
-

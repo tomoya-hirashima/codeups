@@ -33,6 +33,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
@@ -258,7 +259,7 @@
             </h2>
           </div>
           <div class="swiper-box">
-            <div class="campaign__slider swiper swiper-campaign">
+            <div class="campaign__slider swiper campaign-swiper">
               <div class="swiper-wrapper campaign-swiper-wrapper">
                 <div class="swiper-slide campaign-slide">
                   <a href="#" class="campaign-card">
@@ -286,7 +287,7 @@
                   </a>
                 </div>
                 <div class="swiper-slide campaign-slide">
-                  <a href="#" class="cards__item campaign-card">
+                  <a href="#" class="campaign-card">
                     <figure class="campaign-card__img">
                       <img
                         src="./assets/images/common/campaign2-sp.jpg"
@@ -311,7 +312,7 @@
                   </a>
                 </div>
                 <div class="swiper-slide campaign-slide">
-                  <a href="#" class="cards__item campaign-card">
+                  <a href="#" class="campaign-card">
                     <figure class="campaign-card__img">
                       <img
                         src="./assets/images/common/campaign3-sp.jpg"
@@ -336,7 +337,107 @@
                   </a>
                 </div>
                 <div class="swiper-slide campaign-slide">
-                  <a href="#" class="cards__item campaign-card">
+                  <a href="#" class="campaign-card">
+                    <figure class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign4-sp.jpg"
+                        alt="水面に浮かんだ4人のダイバーと奥に見える雄大な山"
+                      />
+                    </figure>
+                    <div class="campaign-card__body">
+                      <p class="campaign-card__category">ファンダイビング</p>
+                      <h3 class="campaign-card__title">貸切ファンダイビング</h3>
+                      <div class="campaign-card__info">
+                        <p class="campaign-card__content">
+                          全部コミコミ(お一人様)
+                        </p>
+                        <div class="campaign-card__price">
+                          <del class="campaign-card__normal-price"
+                            >&yen;20,000</del
+                          >
+                          <div class="campaign-card__discount">&yen;16,000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide campaign-slide">
+                  <a href="#" class="campaign-card">
+                    <figure class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign1-sp.jpg"
+                        alt="色鮮やかなたくさんの種類の魚"
+                      />
+                    </figure>
+                    <div class="campaign-card__body">
+                      <p class="campaign-card__category">ライセンス講習</p>
+                      <h3 class="campaign-card__title">ライセンス取得</h3>
+                      <div class="campaign-card__info">
+                        <p class="campaign-card__content">
+                          全部コミコミ(お一人様)
+                        </p>
+                        <div class="campaign-card__price">
+                          <del class="campaign-card__normal-price"
+                            >&yen;56,000</del
+                          >
+                          <div class="campaign-card__discount">&yen;46,000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide campaign-slide">
+                  <a href="#" class="campaign-card">
+                    <figure class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign2-sp.jpg"
+                        alt="浅瀬に停まる数台の船と遠くに見える島"
+                      />
+                    </figure>
+                    <div class="campaign-card__body">
+                      <p class="campaign-card__category">体験ダイビング</p>
+                      <h3 class="campaign-card__title">貸切体験ダイビング</h3>
+                      <div class="campaign-card__info">
+                        <p class="campaign-card__content">
+                          全部コミコミ(お一人様)
+                        </p>
+                        <div class="campaign-card__price">
+                          <del class="campaign-card__normal-price"
+                            >&yen;24,000</del
+                          >
+                          <div class="campaign-card__discount">&yen;18,000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide campaign-slide">
+                  <a href="#" class="campaign-card">
+                    <figure class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign3-sp.jpg"
+                        alt="水中で光るたくさんの小さなクラゲ"
+                      />
+                    </figure>
+                    <div class="campaign-card__body">
+                      <p class="campaign-card__category">体験ダイビング</p>
+                      <h3 class="campaign-card__title">ナイトダイビング</h3>
+                      <div class="campaign-card__info">
+                        <p class="campaign-card__content">
+                          全部コミコミ(お一人様)
+                        </p>
+                        <div class="campaign-card__price">
+                          <del class="campaign-card__normal-price"
+                            >&yen;10,000</del
+                          >
+                          <div class="campaign-card__discount">&yen;8,000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide campaign-slide">
+                  <a href="#" class="campaign-card">
                     <figure class="campaign-card__img">
                       <img
                         src="./assets/images/common/campaign4-sp.jpg"
@@ -362,13 +463,13 @@
                 </div>
               </div>
             </div>
-            <!-- ナビゲーションボタン -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
-          <button class="top-campaign-button button">
-            <a href="#" class="button__link">view&nbsp;more</a>
-          </button>
+          <!-- ナビゲーションボタン -->
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+            <button class="top-campaign-button button">
+              <a href="#" class="button__link">view&nbsp;more</a>
+            </button>
         </div>
       </section>
 
@@ -888,9 +989,9 @@
       /></a>
     </div>
 
-    <script
+    <!-- <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
+    ></script> -->
   </body>
 </html>

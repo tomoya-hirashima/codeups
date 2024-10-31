@@ -3,8 +3,7 @@
 .top-campaign {
   width: 100%;
   padding-top: rem(40);
-
-  // overflow: hidden;
+  overflow: hidden;
 
   @include mq("md") {
     margin-top: rem(120);
@@ -13,35 +12,37 @@
 
 .top-campaign__inner.inner {
   padding-bottom: rem(5);
+  position: relative;
 }
 
 .swiper-box {
-  position: relative;
   margin-top: rem(26);
   margin-right: calc(50% - 50vw);
+  height: 100%;
 
   @include mq("md") {
     margin-top: rem(40);
   }
 }
 
-.campaign__slider {
-width: 100%;
+.campaign-swiper {
+height: 100%;
+padding-bottom: rem(4);
+padding-left: rem(4);
 }
 
-.campaign-swiper-wrapper {
+.campaign-swiper-wrapper{
   // width: 100%;
+  height: 100%;
 }
 
 .campaign-slide {
   max-width: rem(280);
-  width: 100%;
-  // margin-right: rem(24);
+  height: auto;
   box-sizing: content-box;
 
   @include mq("md") {
     max-width: rem(333.5);
-    // margin-right: rem(40);
   }
 }
 
@@ -60,20 +61,17 @@ width: 100%;
     height: rem(80);
     width: rem(80);
     position: absolute;
-    top: -5.3rem;
+    top: rem(22);
   }
 }
 
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-  @include mq("md") {
-    left: auto;
-    right: 14.81%;
-  }
+.swiper-button-prev{
+  right: rem(182);
+  left:auto;
 }
 
 .swiper-button-next {
-  right: 0;
+  right: rem(22);
 }
 
 .swiper-button-prev::after,

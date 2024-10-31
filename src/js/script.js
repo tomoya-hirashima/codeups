@@ -39,17 +39,21 @@ $(function () {
   });
 
   // スライダー(campaign)
-  const swiperCampaign = new Swiper(".swiper-campaign", {
+  const swiperCampaign = new Swiper(".campaign-swiper", {
     loop: true,
     speed: 2000,
     slidesPerView: "auto",
     grabCursor: true,
     spaceBetween:24,
-    // initialSlide: 1,
+    autoplay: {
+        delay: 1000,
+    },
 
-    // autoplay: {
-    //     delay: 1000,
-    // },
+    breakpoints: {
+      768: {
+        spaceBetween:40,
+      }
+    },
 
     // ナビゲーションボタンの設定
     navigation: {
