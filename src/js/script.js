@@ -5,6 +5,7 @@ jQuery(function ($) {
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-open");
     $(".js-drawer").fadeToggle();
+    $(".js-header").toggleClass("is-open");
     $("body").toggleClass("is-scroll");
   });
 

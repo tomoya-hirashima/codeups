@@ -1,12 +1,10 @@
 @use "global" as *;
 
 .top-voice{
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  margin-top: rem(80);
 
   @include mq("md") {
-    padding-top: rem(120);
-    padding-bottom: rem(140);
+    margin-top: rem(120);
   }
 }
 
@@ -29,7 +27,7 @@
     content: "";
     position: absolute;
     top: rem(-120);
-    left: calc(50% - min(50vw,57.405%));
+    left: calc(50% - min(48vw,57.405%));
     display: inline-block;
     width: rem(301);
     height: rem(138);

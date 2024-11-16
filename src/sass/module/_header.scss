@@ -15,11 +15,16 @@
   }
 }
 
+.js-header.is-open{
+  background-color: $green;
+}
+
 .header__inner {
   width: 100%;
   height: inherit;
   padding: 0 rem(15);
   position: relative;
+  background-color: inherit;
   z-index: 9999;
 
   @include mq("md") {
