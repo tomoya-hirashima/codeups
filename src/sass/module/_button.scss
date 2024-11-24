@@ -1,12 +1,10 @@
 @use "global" as *;
 
+
 .button {
   position: relative;
-  display: block;
-  margin-inline: auto;
+  display: inline-block;
   width: rem(202);
-  height: rem(54);
-  padding: 0;
   border: rem(1) solid $green;
   background-color: $green;
   color: $white;
@@ -51,21 +49,21 @@ z-index: -1;
   transform: scale(1, 1);
 }
 
-.button__link {
-  display: block;
+.button span {
+  display: inline-block;
   width: 100%;
-  padding: rem(16) rem(40) rem(16);
+  padding:rem(16) rem(40);
   font-size: rem(14);
   line-height: 1.571;
   text-align: left;
 }
 
-.button__link::first-letter {
+.button span::first-letter {
   text-transform: capitalize;
 }
 
-.button__link::before,
-.button__link::after {
+.button span::before,
+.button span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -75,20 +73,18 @@ z-index: -1;
   transition: 0.3s background-color;
 }
 
-.button__link::before {
+.button span::before {
   width: 2.5rem;
   transform: translateY(-50%);
 }
 
-.button__link::after {
+.button span::after {
   width: rem(9.2);
   transform: translateY(-50%) rotate(45deg);
   transform-origin: right center;
 }
 
-.button__link:hover::before,
-.button__link:hover::after {
+.button span:hover::before,
+.button span:hover::after {
   background-color: $green;
 }
-
-

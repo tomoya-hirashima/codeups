@@ -2,10 +2,12 @@
 
 .top-info {
   padding: rem(80) 0;
+  margin-top: rem(70);
   background-color: $skyblue;
 
   @include mq("md") {
     padding: rem(100) 0;
+   margin-top: rem(164);
   }
 }
 
@@ -55,4 +57,5 @@
 
 .info-button {
   margin-top: rem(40);
+  text-align: center;
 }

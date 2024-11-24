@@ -61,7 +61,7 @@
   }
 }
 
-.top-blog__title--main.section__title--main span {
+.top-blog__title--main.section__title--main::first-letter {
   @include mq("md") {
     color: $skyblue;
   }
@@ -75,7 +75,6 @@
 
 .top-blog__items {
   margin-top: rem(28);
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: rem(40);
@@ -86,12 +85,9 @@
   }
 }
 
-.top-blog__item {
-  margin: auto;
-}
-
 .top-blog-button {
   margin-top: rem(40);
+  text-align: center;
 
   @include mq("md") {
     margin-top: rem(80);

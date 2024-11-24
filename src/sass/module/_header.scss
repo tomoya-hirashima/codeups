@@ -83,6 +83,7 @@
   height: inherit;
   display: flex;
   align-items: center;
+  gap: rem(40);
 }
 
 .nav__item {
@@ -94,8 +95,6 @@
   height: inherit;
   display: grid;
   place-content: center;
-  padding-right: rem(20);
-  padding-left: rem(20);
   text-align: center;
   cursor: pointer;
 }

@@ -9,24 +9,16 @@
   }
 }
 
-.voice-card a {
-  display: block;
+.voice-card__wrapper{
   padding: rem(15) rem(16) rem(24);
   background-color: $white;
   height: 100%;
   font-family: "Noto Sans JP";
-  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
 
   @include mq("md") {
     padding: rem(24);
-  }
-}
-
-@media (any-hover: hover) {
-  .voice-card a:hover {
-    transform: scale(1.02);
   }
 }
 

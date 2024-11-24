@@ -48,6 +48,7 @@ padding-left: rem(4);
 
 .top-campaign-button {
   margin-top: rem(38);
+  text-align: center;
 
   @include mq("md") {
     margin-top: rem(80);

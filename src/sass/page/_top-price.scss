@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-price {
-
+  margin-top: rem(80);
   padding-top: rem(80);
   padding-bottom: rem(80);
   background-color: $skyblue;
@@ -126,6 +126,7 @@
 
 .top-price-button {
   margin-top: rem(40);
+  text-align: center;
 
   @include mq("md") {
     margin-top: rem(80);
