@@ -55,19 +55,19 @@
   }
 }
 
-.top-blog__title--main.section__title--main {
+.top-blog__title-main.section-heading__main {
   @include mq("md") {
     color: $white;
   }
 }
 
-.top-blog__title--main.section__title--main::first-letter {
+.top-blog__title-main.section-heading__main::first-letter {
   @include mq("md") {
     color: $skyblue;
   }
 }
 
-.top-blog__title--sub.section__title--sub {
+.top-blog__title-sub.section__title--sub {
   @include mq("md") {
     color: $white;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-.top-blog-button {
+.top-blog__button {
   margin-top: rem(40);
   text-align: center;
 

@@ -26,7 +26,7 @@ footer {
   }
 }
 
-.footer-logo {
+.footer__logo {
   width: rem(120);
   height: rem(45);
   transition: .3s opacity;
@@ -44,13 +44,13 @@ footer {
 }
 
 
-.sns-btn {
+.footer__icon {
   display: flex;
   gap: rem(16);
 }
 
-.btn-facebook,
-.btn-instagram {
+.footer__icon-facebook,
+.footer__icon-instagram {
   width: rem(24);
   height: rem(24);
   transition: .3s opacity;
@@ -67,13 +67,6 @@ footer {
     opacity: 0.7;
   }
 }
-
-// @media(any-hover:hover){
-// .btn-instagram a:hover{
-//     opacity: 0.7;
-//   }
-// }
-
 
 
 .footer__wrapper {

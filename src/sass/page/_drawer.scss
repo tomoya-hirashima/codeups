@@ -1,20 +1,19 @@
 @use "global" as *;
 
 .drawer {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 8888;
-  background-color: $green;
-  overflow-y: scroll;
+
 }
 
 .drawer__inner {
   padding-top: rem(101);
   padding-bottom: rem(101);
+}
 
+.drawer__wrapper{
+  max-width: rem(500);
+  margin-inline: auto;
+
+  @include mq("md") {
+    max-width: rem(1130);
+  }
 }

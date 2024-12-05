@@ -2,17 +2,7 @@
 
 // ハンバーガー
 .hamburger {
-  position: fixed;
-  top: rem(28);
-  right: rem(15);
-  width: rem(32);
-  height: rem(24);
-  z-index: 9999;
-  cursor: pointer;
-
-  @include mq("md") {
-    display: none;
-  }
+  
 }
 
 .hamburger span {

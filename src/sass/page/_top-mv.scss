@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.mv__slider,
+.top-mv__slider,
 .swiper-slide picture,
 .swiper-slide source,
 .swiper-slide img {
@@ -24,7 +24,7 @@
   aspect-ratio: 375/667;
 }
 
-.mv__content{
+.top-mv__content{
   position: absolute;
   top: 50.5%;
   left: 50%;
@@ -36,7 +36,7 @@
   }
 }
 
-.mv__title{
+.top-mv__title{
   font-size: rem(40);
   letter-spacing: 0.54em;
   font-family: $third-font-family;
@@ -51,7 +51,7 @@
   }
 }
 
-.mv__text{
+.top-mv__text{
   font-size: rem(20);
   color: $white;
   text-align: center;

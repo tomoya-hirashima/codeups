@@ -19,7 +19,7 @@
   }
 }
 
-.info__wrapper {
+.top-info__wrapper {
   margin-top: rem(27);
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   }
 }
 
-.info__img {
+.top-info__img {
   width: 100%;
 
   @include mq("md") {
@@ -41,7 +41,7 @@
   }
 }
 
-.info__img img {
+.top-info__img img {
   width: 100%;
   aspect-ratio: 345/227;
   object-fit: cover;
@@ -51,11 +51,11 @@
   }
 }
 
-.info__description {
+.top-info__description {
   max-width: rem(492);
 }
 
-.info-button {
+.top-info__button {
   margin-top: rem(40);
   text-align: center;
 }

@@ -21,7 +21,7 @@ jQuery(function ($) {
 
 $(function () {
   // スライダー(mv)
-  const swiperMv = new Swiper(".swiper-mv", {
+  const swiperMv = new Swiper(".swiper-top-mv", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -40,15 +40,15 @@ $(function () {
   });
 
   // スライダー(campaign)
-  const swiperCampaign = new Swiper(".campaign-swiper", {
+  const swiperCampaign = new Swiper(".top-campaign-swiper", {
     loop: true,
     speed: 2000,
     slidesPerView: "auto",
     grabCursor: true,
     spaceBetween:24,
-    autoplay: {
-        delay: 1000,
-    },
+    // autoplay: {
+    //     delay: 1000,
+    // },
 
     breakpoints: {
       768: {

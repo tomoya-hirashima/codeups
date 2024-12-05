@@ -1,12 +1,10 @@
 @use "global" as *;
 
-.section__heading {
-  // width: 100%;
+.section-heading {
   text-align: center;
-  // margin-top: rem(1000);
 }
 
-.section__title--main {
+.section-heading__main {
   font-size: rem(32);
   font-weight: $regular;
   line-height: 1.25;
@@ -17,12 +15,12 @@
   }
 }
 
-.section__title--main::first-letter {
+.section-heading__main::first-letter {
   color: $green;
   text-transform: capitalize;
 }
 
-.section__title--sub {
+.section-heading__sub {
   margin-top: rem(4);
   font-size: rem(12);
   font-weight: $regular;
