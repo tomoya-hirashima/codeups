@@ -32,3 +32,17 @@
     margin-top: rem(8);
   }
 }
+
+
+// ブログタイトル
+.section-heading__main.section-heading__main--color{
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-heading__main.section-heading__main--color::first-letter {
+  @include mq("md") {
+    color: $skyblue;
+  }
+}

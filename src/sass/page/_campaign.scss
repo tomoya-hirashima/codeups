@@ -1,20 +1,16 @@
 @use "global" as *;
 
-.top-campaign {
+.campaign {
   width: 100%;
-  padding-top: rem(40);
   overflow: hidden;
-
-  @include mq("md") {
-    margin-top: rem(120);
-  }
+  padding-bottom: rem(4);
 }
 
-.top-campaign__inner.inner {
+.campaign__inner{
   position: relative;
 }
 
-.swiper-box {
+.campaign__swiper-box {
   margin-top: rem(26);
   margin-right: calc(50% - 50vw);
   height: 100%;
@@ -24,17 +20,17 @@
   }
 }
 
-.top-campaign-swiper {
+.campaign__slider {
 height: 100%;
 padding-bottom: rem(4);
 padding-left: rem(4);
 }
 
-.top-campaign-swiper-wrapper{
+.campaign__swiper-wrapper{
   height: 100%;
 }
 
-.top-campaign-slide {
+.campaign__slide {
   max-width: rem(280);
   height: auto;
   box-sizing: content-box;
@@ -44,7 +40,7 @@ padding-left: rem(4);
   }
 }
 
-.top-campaign-button {
+.campaign__button {
   margin-top: rem(38);
   text-align: center;
 

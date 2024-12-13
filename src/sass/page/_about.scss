@@ -1,25 +1,14 @@
 @use "global" as *;
 
-.top-about {
-  margin-top: rem(140);
-  margin: 0 auto;
+.about {
 }
 
-.top-about__inner.inner{
-  max-width: rem(600);
-
-  @include mq("md") {
-  max-width: rem(1130);
-  }
-}
-
-.top-about__wrapper{
-width: 100%;
+.about__wrapper{
 position: relative;
 }
 
 
-.top-about__wrapper::after {
+.about__wrapper::after {
 
   @include mq("md") {
     content: "";
@@ -36,7 +25,7 @@ position: relative;
   }
 }
 
-.top-about__contents{
+.about__contents{
   margin-top: rem(28);
   width: 100%;
   position: relative;
@@ -46,11 +35,11 @@ position: relative;
   }
 }
 
-.top-about__img-container {
+.about__img-container {
   width: 100%;
 }
 
-.top-about__img1 {
+.about__img1 {
 padding-top: 7.2%;
 padding-left: 18.550%; /* width  64 / 345   */
 
@@ -59,11 +48,11 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__img1 img {
+.about__img1 img {
   width: 100%;
 }
 
-.top-about__img2 {
+.about__img2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,12 +65,12 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__img2 img {
+.about__img2 img {
   width: 100%;
 
 }
 
-.top-about__text-container {
+.about__text-container {
   margin-top: rem(40);
   display: flex;
   flex-direction: column;
@@ -99,7 +88,7 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__message-title {
+.about__message-title {
   font-size: rem(40);
   line-height: 1;
   font-weight: $regular;
@@ -112,7 +101,7 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__message-box {
+.about__message-box {
   margin-top: rem(3);
 
   @include mq("md") {
@@ -120,7 +109,7 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__message-text {
+.about__message-text {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: $regular;
@@ -132,7 +121,7 @@ padding-left: 18.550%; /* width  64 / 345   */
   }
 }
 
-.top-about__button {
+.about__button {
   margin-top: rem(48);
   text-align: center;
 

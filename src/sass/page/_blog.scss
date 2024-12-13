@@ -1,16 +1,16 @@
 @use "global" as *;
 
-.top-blog {
+.blog {
   width: 100%;
-  padding-top: rem(80);
   position: relative;
+  padding-top: rem(80);
 
   @include mq("md") {
     padding-top: rem(100);
   }
 }
 
-.top-blog::before {
+.blog::before {
   @include mq("md") {
     content: "";
     position: absolute;
@@ -19,13 +19,13 @@
     display: block;
     width: 100%;
     height: rem(500);
-    background-image: url(../images/common/top-blog-background.jpg);
+    background-image: url(../images/common/blog-background.jpg);
     background-size: cover;
     z-index: -1;
   }
 }
 
-.top-blog__inner.inner{
+.blog__inner.inner{
   max-width: rem(600);
 
   @include mq("md") {
@@ -33,12 +33,12 @@
 }
 }
 
-.top-blog__wrapper {
+.blog__wrapper {
   width: 100%;
   position: relative;
 }
 
-.top-blog__wrapper::before {
+.blog__wrapper::before {
 
   @include mq("md") {
     content: "";
@@ -55,37 +55,22 @@
   }
 }
 
-.top-blog__title-main.section-heading__main {
+.blog__title-sub.section__title--sub {
   @include mq("md") {
     color: $white;
   }
 }
 
-.top-blog__title-main.section-heading__main::first-letter {
-  @include mq("md") {
-    color: $skyblue;
-  }
-}
-
-.top-blog__title-sub.section__title--sub {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.top-blog__items {
+.blog__items {
   margin-top: rem(28);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: rem(40);
 
   @include mq("md") {
     margin-top: rem(80);
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.top-blog__button {
+.blog__button {
   margin-top: rem(40);
   text-align: center;
 

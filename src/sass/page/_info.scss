@@ -1,17 +1,15 @@
 @use "global" as *;
 
-.top-info {
-  padding: rem(80) 0;
-  margin-top: rem(70);
+.info {
   background-color: $skyblue;
+  padding: rem(80) 0;
 
   @include mq("md") {
     padding: rem(100) 0;
-   margin-top: rem(164);
   }
 }
 
-.top-info__inner.inner {
+.info__inner.inner {
   max-width: rem(600);
 
   @include mq("md") {
@@ -19,7 +17,7 @@
   }
 }
 
-.top-info__wrapper {
+.info__wrapper {
   margin-top: rem(27);
   display: flex;
   flex-direction: column;
@@ -33,7 +31,7 @@
   }
 }
 
-.top-info__img {
+.info__img {
   width: 100%;
 
   @include mq("md") {
@@ -41,7 +39,7 @@
   }
 }
 
-.top-info__img img {
+.info__img img {
   width: 100%;
   aspect-ratio: 345/227;
   object-fit: cover;
@@ -51,11 +49,11 @@
   }
 }
 
-.top-info__description {
+.info__description {
   max-width: rem(492);
 }
 
-.top-info__button {
+.info__button {
   margin-top: rem(40);
   text-align: center;
 }

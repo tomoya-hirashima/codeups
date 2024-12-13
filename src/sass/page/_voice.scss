@@ -1,14 +1,9 @@
 @use "global" as *;
 
-.top-voice{
-  margin-top: rem(80);
-
-  @include mq("md") {
-    margin-top: rem(120);
-  }
+.voice{
 }
 
-.top-voice__inner.inner{
+.voice__inner.inner{
   max-width: rem(600);
 
   @include mq("md") {
@@ -16,12 +11,12 @@
 }
 }
 
-.top-voice__wrapper{
+.voice__wrapper{
   width: 100%;
   position: relative;
 }
 
-.top-voice__wrapper::before {
+.voice__wrapper::before {
 
   @include mq("md") {
     content: "";
@@ -38,7 +33,7 @@
   }
 }
 
-.top-voice__wrapper::after {
+.voice__wrapper::after {
 
   @include mq("md") {
     content: "";
@@ -55,7 +50,7 @@
   }
 }
 
-.top-voice__items{
+.voice__items{
   margin-top: rem(40);
 
   @include mq("md") {
@@ -67,7 +62,7 @@
   margin: 0 auto;
 }
 
-.top-voice__button{
+.voice__button{
   margin-top: rem(40);
   text-align: center;
 
