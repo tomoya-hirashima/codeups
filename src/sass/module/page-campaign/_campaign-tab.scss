@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.campaign-tab {
+  border: rem(1) solid $green;
+  color: $green;
+  display: inline-block;
+  font-family: "Noto Sans JP";
+  font-size: rem(14);
+  line-height: 1.571;
+  padding: rem(6) 0;
+  text-align: center;
+  background-color: $white;
+  transition: 0.3s background-color;
+}
+
+.campaign-tab:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.campaign-tab.is-active {
+  background-color: $green;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.page-blog-main{
+
+}
+
+.page-blog-main__container{
+  margin-top: rem(52);
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
+
+  @include mq("md") {
+    margin-top: rem(150);
+    flex-direction: row;
+  }
+}
+
+.page-blog-main__contents{
+  flex:1;
+}
+
+.page-blog-main__sidebar{
+  width: rem(294);
+  margin: auto;
+}
+
+.page-blog-main__items.blog-cards{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(40);
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
+  }
+}
+
+.page-blog-main__pagination{
+  margin-top: rem(80);
+}

@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  gap: 0 rem(12);
+  list-style-type: none;
+}
+
+.pagination li:nth-child(2) {
+  margin-left: rem(28);   /* margin-left40 - gap12 */
+}
+
+.pagination li:last-child {
+  margin-left: rem(28);   /* 40-12 */
+}
+
+// 前へ戻る
+.pagination__prev {
+  position: relative;
+}
+
+.pagination__prev::before,
+.pagination__prev::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translateX(-50%);
+  width: rem(11.3);
+  height: rem(1);
+  border-radius: 9999px;
+  background-color: $green;
+  transform-origin: 0.5px 50%;
+}
+
+.pagination__prev:hover::before,
+.pagination__prev:hover::after {
+  background-color: $white;
+}
+
+.pagination__prev::before {
+  transform: rotate(46.95deg);
+}
+
+.pagination__prev::after {
+  transform: rotate(-46.95deg);
+}
+
+// 次へ進む
+.pagination__next {
+  position: relative;
+}
+
+.pagination__next::before,
+.pagination__next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: rem(11.3);
+  height: rem(1);
+  border-radius: 9999px;
+  background-color: $green;
+  transform-origin: calc(100% - 0.5px) 50%;
+}
+
+.pagination__next:hover::before,
+.pagination__next:hover::after {
+  background-color: $white;
+}
+
+.pagination__next::before {
+  transform: rotate(46.95deg);
+}
+
+.pagination__next::after {
+  transform: rotate(-46.95deg);
+}
+
+.pagination a {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $green;
+  color: $green;
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: $third-font-family;
+  transition: 0.3s background-color;
+}
+
+.pagination a:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.pagination__current a {
+  background-color: $green;
+  color: #fff;
+  pointer-events: none;
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.sidebar{
+}
+
+.sidebar__category:not(:first-child){
+  margin-top: rem(80);
+}
+

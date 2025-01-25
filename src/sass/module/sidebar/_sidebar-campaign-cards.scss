@@ -1,0 +1,8 @@
+
+@use "global" as *;
+
+.sidebar-campaign-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+}

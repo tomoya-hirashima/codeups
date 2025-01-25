@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.page-about-main{
+
+}
+
+.page-about-main__contents{
+  margin-top: rem(52);
+
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+
+
+.page-about-main__gallery{
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}
+
+.page-about-main__gallery-container{
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

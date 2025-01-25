@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.sidebar-voice-card{
+
+}
+
+.sidebar-voice-card__body{
+  margin-top: rem(16);
+}
+
+.sidebar-voice-card__character{
+  font-size: rem(12);
+  line-height: 1.5;
+  font-weight: $regular;
+  font-family: $base-font-family;
+}
+
+.sidebar-voice-card__title{
+  margin-top: rem(8);
+  font-size: rem(24);
+  font-weight: $medium;
+}

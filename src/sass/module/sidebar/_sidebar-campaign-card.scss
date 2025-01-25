@@ -1,0 +1,95 @@
+@use "global" as *;
+
+
+.sidebar-campaign-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+@media (any-hover: hover) {
+  .sidebar-campaign-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+.sidebar-campaign-card__img {
+  width: 100%;
+}
+
+.sidebar-campaign-card__img img {
+  width: 100%;
+  aspect-ratio: 294 / 188;
+  object-fit: cover;
+}
+
+.sidebar-campaign-card__body {
+  padding-top: rem(16);
+  padding-bottom: rem(24);
+  max-width: 88.571%;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.sidebar-campaign-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sidebar-campaign-card__title {
+  text-align: left;
+  padding-bottom: rem(8);
+  font-size: rem(16);
+  font-weight: $medium;
+  font-family: "Noto Sans JP";
+  line-height: 1.5;
+  color: $black;
+  text-align: center;
+  border-bottom: rem(1) solid $green;
+  flex-grow: 1;
+}
+
+
+.sidebar-campaign-card__info {
+  margin-top: rem(8);
+  width: 100%;
+}
+
+.sidebar-campaign-card__content {
+  text-align: center;
+  font-weight: $regular;
+  font-size: rem(14);
+  line-height: 1.7142;
+  font-family: "Noto Sans JP";
+}
+
+.sidebar-campaign-card__price {
+  margin-top: rem(8);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.sidebar-campaign-card__normal-price {
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: $bold;
+  font-family: $third-font-family;
+  background-image: linear-gradient($orange, $orange);
+  background-position: 0 50%;
+  background-size: 100% rem(3);
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+.sidebar-campaign-card__discount {
+  font-size: rem(32);
+  line-height: 1;
+  font-weight: $bold;
+  color: $green;
+  font-family: $third-font-family;
+}

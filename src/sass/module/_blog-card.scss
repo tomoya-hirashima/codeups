@@ -6,7 +6,6 @@
 }
 
 .blog-card a {
-  transition: .3s transform ease;
   display: block;
   padding: rem(16) rem(16) rem(24);
   background-color: $white;
@@ -15,17 +14,24 @@
   flex-direction: column;
 }
 
-@media(any-hover:hover){
-  .blog-card a:hover{
-    transform: scale(1.02);
-  }
+
+.blog-card__img{
+  overflow: hidden;
 }
 
 .blog-card__img img {
+  transition: .3s transform ease;
   width: 100%;
   aspect-ratio: 301 / 201;
   object-fit: cover;
 }
+
+@media(any-hover:hover){
+  .blog-card__img img:hover{
+    transform: scale(1.05);
+  }
+}
+
 
 .blog-card__body {
   flex-grow: 1;
@@ -43,6 +49,7 @@
   font-size: rem(12);
   line-height: 1.5;
   font-weight: $regular;
+  font-family: $base-font-family;
 }
 
 .blog-card__title {

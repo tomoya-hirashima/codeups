@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.info-tab {
+  display: inline-block;
+  padding: rem(10) rem(16);
+  background-color: $skyblue;
+  box-shadow: rem(2) rem(2) rem(4) 0 rgba(0, 0, 0, 0.25);
+  font-size: rem(14);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  color: $green;
+  text-align: center;
+  transition: 0.3s background-color;
+
+  @include mq("md") {
+    padding: rem(13) rem(30);
+    font-size: rem(24);
+  }
+}
+
+.info-tab:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.info-tab.is-active {
+  background-color: $green;
+  color: $white;
+}

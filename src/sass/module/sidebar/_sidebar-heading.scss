@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.sidebar-heading{
+  display: inline-block;
+  height: rem(50);
+  border-left: rem(8) solid $green;
+}
+
+.sidebar-heading__wrapper {
+  margin-left: rem(16);
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+}
+
+.sidebar-heading__icon {
+  display:inline-block;
+  width:rem(50);
+  height:rem(50);
+  background-image: url(../images/common/sidebar-icon.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sidebar-heading__title{
+  padding-top: rem(3);
+  font-size:rem(24);
+  font-weight:$regular;
+  font-family:$base-font-family;
+  color:$navy;
+}

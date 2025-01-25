@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.breadcrumbs {
+}
+
+.breadcrumbs__items {
+  display: flex;
+  gap: rem(8);
+  font-size:rem(14);
+  font-weight:$medium;
+  font-family:"Noto Sans JP";
+  color:$navy;
+}
+
+.breadcrumbs__item a{
+  transition: 0.3s opacity;
+}
+
+.breadcrumbs__item a:hover{
+  opacity: 0.5;
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: rem(4);
+  height: rem(8);
+  background-image: url(../images/common/breadcrumb-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: rem(8);
+}

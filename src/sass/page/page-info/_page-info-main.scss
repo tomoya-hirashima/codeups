@@ -1,0 +1,12 @@
+@use "global" as *;
+
+// .page-info-main{
+// }
+
+.page-info-main__tab-contents{
+  margin-top: rem(16);
+
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}

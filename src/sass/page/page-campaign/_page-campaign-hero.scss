@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.page-campaign-hero{
+  background-image: url(../images/common/sub-campaign-hero-sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq("md") {
+    background-image: url(../images/common/sub-campaign-hero.jpg);
+  }
+}

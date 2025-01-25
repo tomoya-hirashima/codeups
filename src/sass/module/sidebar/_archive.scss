@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.archive{
+  font-size:rem(24);
+  font-weight:$regular;
+  font-family:"Noto Sans JP", sans-serif;
+  color:$green;
+}
+
+.archive__year:not(:first-child){
+  margin-top: rem(9);
+}
+
+.archive__year-label {
+  position: relative;
+  padding-left: rem(32);
+  cursor: pointer;
+}
+
+.archive__year-label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: rem(8);
+  transform: translateY(-50%);
+  width: rem(18);
+  height: rem(18);
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(0 0,100% 50%,0 100%);
+  background: $green;
+  transition: transform 0.3s;
+}
+
+.archive__year-label.is-open::before {
+  transform:rotate(90deg);
+}
+
+
+.archive__month-list {
+  margin-top: rem(9);
+  margin-left: rem(24);
+  display: none;
+}
+
+.archive__month-list.is-open {
+  display: block;
+}
+
+.archive__month {
+
+}
+
+.archive__month::before {
+}
+
+.archive__month:not(:first-child){
+  margin-top: rem(4);
+}
+
+
+.archive__link {
+}
+
+.archive__link span{
+  position: relative;
+  padding-left: rem(32)
+}
+
+.archive__link span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: rem(8);
+  transform: translateY(-50%);
+  width: rem(18);
+  height: rem(18);
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(0 0,100% 50%,0 100%);
+  background: $green;
+  transition: transform 0.3s;
+}
+
+
+
+/* HTML: <div class="triangle"></div> */
+.triangle {
+  height: rem(18);
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(0 0,100% 50%,0 100%);
+  background: $green;
+}
