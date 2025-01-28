@@ -51,8 +51,8 @@
         <nav class="header__nav nav-bar">
           <ul class="nav-bar__items">
             <li class="nav-bar__item">
-              <a href="./page-voice.html">
-                <p class="nav-bar__item-main">voice</p>
+              <a href="./page-campaign.html">
+                <p class="nav-bar__item-main">Campaign</p>
                 <p class="nav-bar__item-sub">キャンペーン</p>
               </a>
             </li>
@@ -207,420 +207,248 @@
       <section id="page-voice-main" class="page-voice-main l-page-voice-main">
         <div class="page-voice-main__inner inner">
           <div class="page-voice-main__container">
-            <div class="page-voice-main__tab-group voice-tabs tabs">
-              <button
-                class="voice-tabs__item voice-tab js-voice-tab is-active"
-                data-target="all"
-              >
-                ALL
-              </button>
-              <button
-                class="voice-tabs__item voice-tab js-voice-tab"
-                data-target="license"
-              >
-                ライセンス講習
-              </button>
-              <button
-                class="voice-tabs__item voice-tab js-voice-tab"
-                data-target="fun-diving"
-              >
-                ファンダイビング
-              </button>
-              <button
-                class="voice-tabs__item voice-tab js-voice-tab"
-                data-target="trial-diving"
-              >
-                体験ダイビング
-              </button>
+            <div class="page-voice-main__tab-group voice-tabs">
+              <button class="voice-tabs__item voice-tab js-voice-tab is-active" data-target="all">ALL</button>
+              <button class="voice-tabs__item voice-tab js-voice-tab" data-target="license">ライセンス講習</button>
+              <button class="voice-tabs__item voice-tab js-voice-tab" data-target="fun-diving">ファンダイビング</button>
+              <button class="voice-tabs__item voice-tab js-voice-tab" data-target="trial-diving">体験ダイビング</button>
             </div>
 
             <div class="page-voice-main__tab-contents tab-contents">
-              <div
-                class="tab-contents__item tab-content js-tab-content is-active"
-                id="all"
-              >
-                <div class="tab-content__container page-voice-cards">
-                  <div
-                    class="page-voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice1-sp.jpg"
-                        alt="色鮮やかなたくさんの種類の魚"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">ライセンス講習</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">ライセンス取得</h3>
+              <div  class="tab-contents__item tab-content js-tab-content is-active" id="all">
+                <ul class="tab-content__container page-voice-cards">
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;56,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;46,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">20代(女性)</p>
+                            <p class="voice-card__category">ライセンス講習</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice1-img.jpg"
+                            alt="麦わら帽子を被り微笑む女性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                  <div
-                    class="voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice2-sp.jpg"
-                        alt="浅瀬に停まる数台の船と遠くに見える島"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">体験ダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">貸切体験ダイビング</h3>
+                  </li>
+                  <li class="page-voice-cards__item voice-card">
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;24,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;18,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">30代(男性)</p>
+                            <p class="voice-card__category">ファンダイビング</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice2-img.jpg"
+                            alt="親指を立ててはにかむ男性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                  <div
-                    class="voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice3-sp.jpg"
-                        alt="水中で光るたくさんの小さなクラゲ"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">体験ダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">ナイトダイビング</h3>
+                  </li>
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;10,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;8,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">30代(女性)</p>
+                            <p class="voice-card__category">体験ダイビング</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice3-img.jpg"
+                            alt="笑顔でポーズを取る2人の女性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                  <div
-                    class="voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice4-sp.jpg"
-                        alt="水面に浮かんだ4人のダイバーと奥に見える雄大な山"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">ファンダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">
-                          貸切ファンダイビング
-                        </h3>
+                  </li>
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;20,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;16,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">20代(女性)</p>
+                            <p class="voice-card__category">体験ダイビング</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice4-img.jpg"
+                            alt="風になびく髪を押さえながら笑顔を見せる女性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                </div>
+                  </li>
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
+                        <div class="voice-card__info">
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">30代(カップル)</p>
+                            <p class="voice-card__category">ファンダイビング</p>
+                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
+                        </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice5-img.jpg"
+                            alt="麦わら帽子を被り微笑む女性"
+                          />
+                        </figure>
+                      </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
+                    </div>
+                  </li>
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
+                        <div class="voice-card__info">
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">20代(女性)</p>
+                            <p class="voice-card__category">ライセンス講習</p>
+                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
+                        </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice6-img.jpg"
+                            alt="ボーダーの服を着た笑顔の女性"
+                          />
+                        </figure>
+                      </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
+                    </div>
+                  </li>
+                <ul/>
               </div>
 
-              <div
-                class="tab-contents__item tab-content js-tab-content"
-                id="license"
-              >
-                <div class="tab-content__container page-voice-cards">
-                  <div
-                    class="page-voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice1-sp.jpg"
-                        alt="色鮮やかなたくさんの種類の魚"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">ライセンス講習</p>
+              <div class="tab-contents__item tab-content js-tab-content" id="license" >
+                <ul class="tab-content__container page-voice-cards">
+                  <li class="page-voice-cards__item voice-card" >
                       <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">ライセンス取得</h3>
-                        <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;56,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;46,000
+                        <div class="voice-card__header">
+                          <div class="voice-card__info">
+                            <div class="voice-card__details">
+                              <p class="voice-card__character">20代(女性)</p>
+                              <p class="voice-card__category">ライセンス講習</p>
                             </div>
+                            <h3 class="voice-card__title">
+                              ここにタイトルが入ります。ここにタイトル
+                            </h3>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <figure class="voice-card__img img-animation">
+                            <img
+                              src="./assets/images/common/voice1-img.jpg"
+                              alt="麦わら帽子を被り微笑む女性"
+                            />
+                          </figure>
                         </div>
+                        <p class="voice-card__text">
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                        </p>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
 
-              <div
-                class="tab-contents__item tab-content js-tab-content"
-                id="fun-diving"
-              >
-                <div class="tab-content__container page-voice-cards">
-                  <div
-                    class="page-voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice4-sp.jpg"
-                        alt="水面に浮かんだ4人のダイバーと奥に見える雄大な山"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">ファンダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">
-                          貸切ファンダイビング
-                        </h3>
+              <div class="tab-contents__item tab-content js-tab-content" id="fun-diving" >
+                <ul class="tab-content__container page-voice-cards">
+                  <li class="page-voice-cards__item voice-card">
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;20,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;16,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">30代(男性)</p>
+                            <p class="voice-card__category">ファンダイビング</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice2-img.jpg"
+                            alt="親指を立ててはにかむ男性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
 
-              <div
-                class="tab-contents__item tab-content js-tab-content"
-                id="trial-diving"
-              >
-                <div class="tab-content__container page-voice-cards">
-                  <div
-                    class="page-voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice2-sp.jpg"
-                        alt="浅瀬に停まる数台の船と遠くに見える島"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">体験ダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">貸切体験ダイビング</h3>
+              <div class="tab-contents__item tab-content js-tab-content" id="trial-diving">
+                <ul class="tab-content__container page-voice-cards">
+                  <li class="page-voice-cards__item voice-card" >
+                    <div class="voice-card__wrapper">
+                      <div class="voice-card__header">
                         <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;24,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;18,000
-                            </div>
+                          <div class="voice-card__details">
+                            <p class="voice-card__character">30代(女性)</p>
+                            <p class="voice-card__category">体験ダイビング</p>
                           </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
+                          <h3 class="voice-card__title">
+                            ここにタイトルが入ります。ここにタイトル
+                          </h3>
                         </div>
+                        <figure class="voice-card__img img-animation">
+                          <img
+                            src="./assets/images/common/voice3-img.jpg"
+                            alt="笑顔でポーズを取る2人の女性"
+                          />
+                        </figure>
                       </div>
+                      <p class="voice-card__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
                     </div>
-                  </div>
-                  <div
-                    class="page-voice-cards__item voice-card voice-card--detailed"
-                  >
-                    <figure class="voice-card__img">
-                      <img
-                        src="./assets/images/common/voice3-sp.jpg"
-                        alt="水中で光るたくさんの小さなクラゲ"
-                      />
-                    </figure>
-                    <div class="voice-card__body">
-                      <p class="voice-card__category">体験ダイビング</p>
-                      <div class="voice-card__wrapper">
-                        <h3 class="voice-card__title">ナイトダイビング</h3>
-                        <div class="voice-card__info">
-                          <p class="voice-card__content">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="voice-card__price">
-                            <del class="voice-card__normal-price"
-                              >&yen;10,000</del
-                            >
-                            <div class="voice-card__discount">
-                              &yen;8,000
-                            </div>
-                          </div>
-                          <div class="voice-card__extra">
-                            <p class="voice-card__description">
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                            </p>
-                            <p class="voice-card__period">2023/6/1-9/30</p>
-                            <p class="voice-card__reserve">
-                              ご予約・お問い合わせはコチラ
-                            </p>
-                            <div class="voice-card__button">
-                              <a href="#" class="button"
-                                ><span>contact&nbsp;us</span></a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -636,95 +464,6 @@
               <li class="pagination__next"><a href="#"></a></li>
             </ul>
 
-              <div class="page-voice-cards__item voice-card">
-                <figure class="voice-card__img">
-                  <img
-                    src="./assets/images/common/voice1-sp.jpg"
-                    alt="色鮮やかなたくさんの種類の魚"
-                  />
-                </figure>
-                <div class="voice-card__body">
-                  <p class="voice-card__category">ライセンス講習</p>
-                  <h3 class="voice-card__title">ライセンス取得</h3>
-                  <div class="voice-card__info">
-                    <p class="voice-card__content">全部コミコミ(お一人様)</p>
-                    <div class="voice-card__price">
-                      <del class="voice-card__normal-price">&yen;56,000</del>
-                      <div class="voice-card__discount">&yen;46,000</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="page-voice-cards__item voice-card">
-                <figure class="voice-card__img">
-                  <img
-                    src="./assets/images/common/voice2-sp.jpg"
-                    alt="浅瀬に停まる数台の船と遠くに見える島"
-                  />
-                </figure>
-                <div class="voice-card__body">
-                  <p class="voice-card__category">体験ダイビング</p>
-                  <h3 class="voice-card__title">貸切体験ダイビング</h3>
-                  <div class="voice-card__info">
-                    <p class="voice-card__content">
-                      全部コミコミ(お一人様)
-                    </p>
-                    <div class="voice-card__price">
-                      <del class="voice-card__normal-price"
-                        >&yen;24,000</del
-                      >
-                      <div class="voice-card__discount">&yen;18,000</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="page-voice-cards__item voice-card">
-                <figure class="voice-card__img">
-                  <img
-                    src="./assets/images/common/voice3-sp.jpg"
-                    alt="水中で光るたくさんの小さなクラゲ"
-                  />
-                </figure>
-                <div class="voice-card__body">
-                  <p class="voice-card__category">体験ダイビング</p>
-                  <h3 class="voice-card__title">ナイトダイビング</h3>
-                  <div class="voice-card__info">
-                    <p class="voice-card__content">
-                      全部コミコミ(お一人様)
-                    </p>
-                    <div class="voice-card__price">
-                      <del class="voice-card__normal-price"
-                        >&yen;10,000</del
-                      >
-                      <div class="voice-card__discount">&yen;8,000</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="page-voice-cards__item voice-card">
-                <figure class="voice-card__img">
-                  <img
-                    src="./assets/images/common/voice4-sp.jpg"
-                    alt="水面に浮かんだ4人のダイバーと奥に見える雄大な山"
-                  />
-                </figure>
-                <div class="voice-card__body">
-                  <p class="voice-card__category">ファンダイビング</p>
-                  <h3 class="voice-card__title">貸切ファンダイビング</h3>
-                  <div class="voice-card__info">
-                    <p class="voice-card__content">
-                      全部コミコミ(お一人様)
-                    </p>
-                    <div class="voice-card__price">
-                      <del class="voice-card__normal-price"
-                        >&yen;20,000</del
-                      >
-                      <div class="voice-card__discount">&yen;16,000</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>

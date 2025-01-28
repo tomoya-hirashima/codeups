@@ -195,5 +195,33 @@ $(function () {
         $(this).next().slideToggle(300);
       });
     });
+
+    //タブの切り替え(voice)
+  $(function () {
+    const tabButton = $(".js-voice-tab"),
+      tabContent = $(".js-tab-content");
+    tabButton.on("click", function () {
+      let index = tabButton.index(this);
+
+      tabButton.removeClass("is-active");
+      $(this).addClass("is-active");
+      tabContent.removeClass("is-active");
+      tabContent.eq(index).addClass("is-active");
+    });
+  });
+
+  //アコーディオン(FAQ)
+  $(function () {
+    $(".js-accordion-box__answer").css(
+      "display",
+      "block"
+    );
+    $(".js-accordion-box__question").addClass("is-open");
+    $(".js-accordion-box__question").on("click", function () {
+      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(300);
+    });
+  });
+
 });
 

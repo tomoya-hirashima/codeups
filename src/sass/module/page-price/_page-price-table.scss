@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.page-price-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  @include mq("md") {
+    max-width: rem(700);
+  }
+}
+
+.page-price-table__col1 {
+  width: rem(200);
+}
+
+.page-price-table__col2 {
+  width: 69.5%;
+
+  @include mq("md") {
+    width: 48.6%;
+  }
+}
+
+.page-price-table__col3 {
+  width: auto;
+  text-align: right;
+
+  @include mq("md") {
+    width: 23.1%;
+  }
+}
+
+.page-price-table thead {
+  background-color: $green;
+}
+
+.page-price-table th {
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: $bold;
+  color: $white;
+  text-align: center;
+  padding: rem(8) 0;
+}
+
+
+.page-price-table td {
+  border: rem(1) solid $green;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  color: $navy;
+  padding: rem(8) rem(16);
+
+  @include mq("md") {
+    padding: rem(18) rem(16);
+  }
+}
+
+// .page-price-table__col2 td {
+//   text-align: center;
+
+//   @include mq("md") {
+//     text-align: left;
+//   }
+// }
+
+// .page-price-table__col3 td {
+//   text-align: right;
+// }
+
+// .page-price-table td:nth-child(odd) {
+//   text-align: center;
+
+//   @include mq("md") {
+//     text-align: left;
+//   }
+// }
+
+// .page-price-table td:nth-child(2n) {
+//   text-align: right;
+// }
+
+.page-price-table__pc {
+  background-color: $green;
+  width: 200px;
+}
+
+.pc-only {
+  display: none;
+
+  @include mq("md") {
+    display: table-cell;
+  }
+}
+
+.sp-only {
+  display: table-cell;
+
+  @include mq("md") {
+    display: none;
+  }
+}

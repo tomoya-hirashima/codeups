@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.page-price-box{
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+
+  @include mq("md") {
+  gap: rem(80);
+  }
+}
+
+.page-price-box__item{
+  margin-inline: auto;
+}

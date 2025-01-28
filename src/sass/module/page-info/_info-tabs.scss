@@ -1,13 +1,11 @@
 @use "global" as *;
 
 .info-tabs{
-  margin-top: rem(121);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: rem(19);
 
   @include mq("md") {
-    margin-top: rem(150);
     gap: rem(90);
   }
 }

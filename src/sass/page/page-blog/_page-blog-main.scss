@@ -5,13 +5,11 @@
 }
 
 .page-blog-main__container{
-  margin-top: rem(52);
   display: flex;
   flex-direction: column;
   gap: rem(80);
 
   @include mq("md") {
-    margin-top: rem(150);
     flex-direction: row;
   }
 }

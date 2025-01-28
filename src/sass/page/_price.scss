@@ -78,54 +78,10 @@
   font-family: "Noto Sans JP";
 }
 
-.price__item:not(:first-child) {
+.price-box__item:not(:first-child) {
   margin-top: rem(35);
 
   @include mq("md") {
   margin-top: rem(40);
-  }
-}
-
-.price__item-col1 {
-  width: 100%;
-}
-
-.price__item-col2 {
-  width: auto;
-  text-align: right;
-}
-
-.price__item th {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: $bold;
-  text-align: left;
-  padding: 0 0 rem(4);
-  border-bottom: rem(1) solid $green;
-}
-
-.price__item td {
-  font-size: rem(14);
-  line-height: 1.714;
-  font-weight: $regular;
-  padding: rem(6) 0 0;
-
-  @include mq("md") {
-  font-size: rem(16);
-  line-height: 1.3;
-  }
-}
-
-.price__item td:nth-child(2) {
-  text-align: right;
-  padding-left: rem(10);
-}
-
-.price__button {
-  margin-top: rem(40);
-  text-align: center;
-
-  @include mq("md") {
-    margin-top: rem(80);
   }
 }
