@@ -199,20 +199,26 @@
             <li class="breadcrumbs__item">
               <a href="index.html">TOP</a>
             </li>
-            <li class="breadcrumbs__item">お問い合わせ</li>
+            <li class="breadcrumbs__item">
+              <a href="./page-contact.html">お問い合わせ</a>
+            </li>
+            <li class="breadcrumbs__item">お問い合わせエラー</li>
           </ul>
         </div>
       </nav>
 
       <section id="page-contact-main" class="page-contact-main l-page-contact-main">
         <div class="page-contact-main__inner inner">
-          <div class="page-contact-main__container">
+          <div class="page-contact-main__error">
+            <p class="page-contact-main__error-text">※必須項目が入力されていません。<br class="u-mobile">入力してください。</p>
+         </div>
+          <div class="page-contact-main__container page-contact-main__container--error">
             <form action="" method="" class="page-contact-main__form form">
               <table class="form__table">
                 <tr class="form__wrapper form-wrapper">
                   <th class="form-wrapper__item"><span>お名前</span></th>
-                  <td class="form-wrapper__body">
-                    <input type="text" name="名前" class="form-wrapper__text"  placeholder="沖縄&emsp;太郎"/>
+                  <td class="form-wrapper__body form-wrapper__body--error">
+                    <input type="text" name="名前" class="form-wrapper__text form-wrapper__text--error"  placeholder="沖縄&emsp;太郎"/>
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
@@ -264,7 +270,7 @@
               </table>
                 <div class="form__private">
                   <input type="checkbox" name="" id="private" />
-                  <label for="private" class="form__private-text">個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</label>
+                  <label for="private" class="form__private-text">個人情報の取り扱いについて同意のうえ送信します。</label>
                 </div>
               <div class="form__button">
                 <a href="#" class="button button-send"><span>Send</span></a>

@@ -13,7 +13,7 @@
   transition: 0.3s background-color;
 
   @include mq("md") {
-    padding: rem(13) rem(30);
+    padding: rem(29) 0 rem(32);
     font-size: rem(24);
   }
 }
@@ -26,4 +26,38 @@
 .info-tab.is-active {
   background-color: $green;
   color: $white;
+}
+
+
+// あしらい
+.info-tab span{
+  position: relative;
+  padding-left: rem(72);
+}
+
+.info-tab span::before{
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top:rem(-16);
+  left:0;
+  width: rem(64);
+  height: rem(64);
+  background-size: contain;
+}
+
+.info-tab:nth-child(1) span::before{
+  background: currentColor;
+  mask: url(../images/common/info-tab-whale.png) no-repeat center / contain;
+}
+
+.info-tab:nth-child(2) span::before{
+  background: currentColor;
+  mask: url(../images/common/info-tab-shark.png) no-repeat center / contain;
+}
+
+.info-tab:nth-child(3) span::before{
+  background: currentColor;
+  mask: url(../images/common/info-tab-fish.png) no-repeat center / contain;
+
 }

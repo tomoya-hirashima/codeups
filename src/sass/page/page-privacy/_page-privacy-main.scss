@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.page-privacy-main {
+}
+
+
+.page-privacy-main__inner.inner{
+
+  @include mq("md") {
+    max-width: rem(850);
+  }
+}
+
+.page-privacy-main__title {
+  font-size: rem(24);
+  font-weight: $medium;
+  font-family: $base-font-family;
+  color: $navy;
+
+  @include mq("md") {
+  font-size: rem(32);
+  }
+}
+
+.page-privacy-main__items {
+  margin-top: rem(40);
+
+  @include mq("md") {
+  margin-top: rem(48);
+  }
+}
+
+.page-privacy-main__item {
+font-size:rem(16);
+font-weight:$regular;
+font-family: $base-font-family;
+line-height:2;
+color:$navy;
+}
+
+.page-privacy-main__item:not(:first-child){
+  margin-top: rem(40);
+}
+
+
+.page-privacy-main__list {
+  padding-left: 1em;
+  text-indent: -1em;
+}

@@ -10,5 +10,7 @@
 
   @include mq("md") {
   gap: rem(40);
+  max-width: rem(700);
+  margin: auto;
   }
 }

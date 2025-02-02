@@ -1,13 +1,52 @@
 @use "global" as *;
 
-.page-contact-main{
+.page-contact-main {
 }
 
-
-.page-contact-main__inner.inner{
-
+.page-contact-main__inner.inner {
   @include mq("md") {
     max-width: rem(750);
   }
 }
 
+// エラーページ
+.page-contact-main__error {
+  display: flex;
+  justify-content: center;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.page-contact-main__error-text {
+  font-size:rem(14);
+  font-weight:$regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color:$orange;
+}
+
+.page-contact-main__container.page-contact-main__container--error {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(43);
+  }
+}
+
+// 送信完了
+.page-contact-main__announce {
+  text-align: center;
+  font-size:rem(16);
+  font-weight:$regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color:$navy;
+  line-height: 1.125;
+}
+
+.page-contact-main__message {
+  text-align: center;
+  margin-top: rem(40);
+  font-size:rem(16);
+  font-weight:$regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color:$navy;
+}

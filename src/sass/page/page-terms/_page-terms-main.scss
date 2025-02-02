@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.page-terms-main {
+}
+
+.page-terms-main__inner.inner {
+  @include mq("md") {
+    max-width: rem(850);
+  }
+}
+
+.page-terms-main__title {
+  font-size: rem(24);
+  font-weight: $medium;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
+
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.page-terms-main__items {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.page-terms-main__item {
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: 2;
+  color: $navy;
+}
+
+.page-terms-main__item:not(:first-child) {
+  margin-top: rem(40);
+}
+
+.page-terms-main__list {
+  padding-left: 1em;
+  text-indent: -1em;
+}

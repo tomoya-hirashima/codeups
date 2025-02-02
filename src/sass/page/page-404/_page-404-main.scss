@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.page-404-main {
+  background-color: $green;
+  padding-top: rem(98);
+  line-height: 1;
+}
+
+.page-404-main__breadcrumbs {
+  color: $white;
+}
+
+.page-404-main__container {
+  position: relative;
+  padding-bottom: rem(44);
+
+  @include mq("md") {
+    padding-bottom: rem(148);
+  }
+}
+
+.page-404-main__container::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/common/whale.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @include mq("md") {
+  width: 64.62%;
+  }
+
+}
+
+
+.page-404-main__message {
+  padding-top: rem(54);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  @include mq("md") {
+    padding-top: rem(121);
+  }
+}
+
+.page-404-main__error {
+  text-indent: 0.5em;
+  font-size: rem(80);
+  font-weight: $regular;
+  font-family: $third-font-family;
+  letter-spacing: 0.5em;
+  color: $white;
+
+  @include mq("md") {
+    font-size: rem(160);
+  }
+}
+
+.page-404-main__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $third-font-family;
+  line-height: 1.5;
+  color: $white;
+
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.page-404-main__button {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(96);
+  }
+}
+
+.button {
+}

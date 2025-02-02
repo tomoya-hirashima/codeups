@@ -6,46 +6,59 @@
 
   @include mq("md") {
     max-width: rem(700);
+    display: flex;
   }
 }
 
-.page-price-table__col1 {
-  width: rem(200);
-}
-
-.page-price-table__col2 {
-  width: 69.5%;
-
-  @include mq("md") {
-    width: 48.6%;
-  }
-}
-
-.page-price-table__col3 {
-  width: auto;
-  text-align: right;
-
-  @include mq("md") {
-    width: 23.1%;
-  }
-}
-
-.page-price-table thead {
+.page-price-table__head-text {
+  display: block;
+  width: 100%;
+  padding: rem(8) 0;
   background-color: $green;
-}
-
-.page-price-table th {
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $bold;
   color: $white;
   text-align: center;
-  padding: rem(8) 0;
+
+  @include mq("md") {
+    display: grid;
+    place-items: center;
+  }
 }
 
+.page-price-table__head-text span{
+  position: relative;
+  padding-left: rem(32);
+
+  @include mq("md") {
+  padding-left: 0;
+  padding-bottom: rem(72);
+  }
+}
+
+.page-price-table__head-text span::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: rem(24);
+  height: rem(24);
+  background-image: url(../images/common/whale-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mq("md") {
+    top: rem(32);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(64);
+    height: rem(64);
+  }
+}
 
 .page-price-table td {
-  border: rem(1) solid $green;
   font-size: rem(16);
   font-weight: $regular;
   font-family: $base-font-family;
@@ -58,47 +71,55 @@
   }
 }
 
-// .page-price-table__col2 td {
-//   text-align: center;
-
-//   @include mq("md") {
-//     text-align: left;
-//   }
-// }
-
-// .page-price-table__col3 td {
-//   text-align: right;
-// }
-
-// .page-price-table td:nth-child(odd) {
-//   text-align: center;
-
-//   @include mq("md") {
-//     text-align: left;
-//   }
-// }
-
-// .page-price-table td:nth-child(2n) {
-//   text-align: right;
-// }
-
-.page-price-table__pc {
+.page-price-table__head {
   background-color: $green;
-  width: 200px;
+
+  @include mq("md") {
+    display: flex;
+    width: 28.58%;
+  }
 }
 
-.pc-only {
+.page-price-table__head-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-price-table__body-row:last-child {
+  border-bottom: rem(1) solid $green;
+}
+
+.page-price-table__head-row td {
   display: none;
+}
+
+.page-price-table__body {
+  width: 100%;
+}
+
+.page-price-table__body-row {
+  display: flex;
+}
+
+.page-price-table__course {
+  width: 69.5%;
+  text-align: center;
+  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $green;
+  border-left: rem(1) solid $green;
 
   @include mq("md") {
-    display: table-cell;
+    text-align: left;
   }
 }
 
-.sp-only {
-  display: table-cell;
-
-  @include mq("md") {
-    display: none;
-  }
+.page-price-table__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30.72%;
+  border-top: rem(1) solid $green;
+  border-right: rem(1) solid $green;
 }

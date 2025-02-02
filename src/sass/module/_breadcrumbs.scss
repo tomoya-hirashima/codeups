@@ -1,7 +1,30 @@
 @use "global" as *;
 
 .breadcrumbs {
+  position: relative;
 }
+
+.breadcrumbs ::before{
+position: absolute;
+content: "";
+top: rem(48);
+left: calc(50% - min(46vw, 57.407%));
+display: inline-block;
+width: rem(120);
+height: rem(55);
+background-image: url(../images/common/sub-campaign-backimg.png);
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+
+
+@include mq("md") {
+top: rem(100);
+width: rem(301);
+height: rem(138);
+}
+}
+
 
 .breadcrumbs__items {
   display: flex;
@@ -10,6 +33,10 @@
   font-weight:$medium;
   font-family:"Noto Sans JP";
   color:$navy;
+}
+
+.breadcrumbs__items.breadcrumbs__items--white{
+  color: $white;
 }
 
 .breadcrumbs__item a{
@@ -30,4 +57,9 @@
   background-size: cover;
   background-position: center;
   margin-left: rem(8);
+}
+
+
+.breadcrumbs__item.breadcrumbs__item--white:not(:last-child):after {
+  background-image: url(../images/common/breadcrumb-arrow-white.svg);
 }

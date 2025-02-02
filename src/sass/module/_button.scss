@@ -88,3 +88,42 @@ z-index: -1;
 .button span:hover::after {
   background-color: $green;
 }
+
+
+
+// page-contact button
+.button.button-send  span{
+  padding: rem(16) rem(56);
+}
+
+
+// 色変更（白） 404ページ
+.button.button-white{
+  background-color: $white;
+  color:$green;
+  border: rem(1) solid $white;
+}
+
+
+.button.button-white::before {
+  border: rem(1) solid $white;
+}
+
+.button.button-white::after{
+  background: $green;
+}
+
+.button.button-white:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.button.button-white span::before,
+.button.button-white span::after {
+  background-color: $green;
+}
+
+.button.button-white span:hover::before,
+.button.button-white span:hover::after {
+  background-color: $white;
+}

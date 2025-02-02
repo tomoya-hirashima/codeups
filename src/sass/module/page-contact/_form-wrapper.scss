@@ -12,10 +12,10 @@
   }
 }
 
-.form-wrapper::after{
-  comtent:"";
+.form-wrapper::after {
+  comtent: "";
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: rem(1);
@@ -23,25 +23,24 @@
   background-repeat: repeat;
 }
 
-
 .form-wrapper__item {
   width: 100%;
   text-align: left;
-  font-size:rem(16);
-  font-weight:$bold;
-  font-family:"Noto Sans JP", sans-serif;
-  color:$navy;
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
 
   @include mq("md") {
     width: 31.42%;
   }
 }
 
-.form-wrapper__item span{
+.form-wrapper__item span {
   position: relative;
 }
 
-.form-wrapper__item span::after{
+.form-wrapper__item span::after {
   content: "必須";
   position: absolute;
   top: rem(1);
@@ -51,9 +50,9 @@
   height: rem(21);
   background-color: $orange;
   padding: rem(2) rem(11) rem(2) rem(16);
-  font-size:rem(12);
-  font-weight:$regular;
-  font-family:"Noto Sans JP", sans-serif;
+  font-size: rem(12);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
   color: $white;
   letter-spacing: 0.4em;
 }
@@ -68,12 +67,17 @@
   }
 }
 
+.form-wrapper__body.form-wrapper__body--error{
+  border: rem(1) solid $orange;
+  background-color:rgba($color:$orange, $alpha: 0.2);
+
+}
 
 .form-wrapper__body-4th {
   display: flex;
   flex-direction: column;
   gap: rem(4);
-  
+
   @include mq("md") {
     gap: rem(6);
   }
@@ -83,41 +87,47 @@
   border: none;
 }
 
-.form-wrapper__body-5th{
+.form-wrapper__body-5th {
   position: relative;
 }
 
-.form-wrapper__body-5th::after{
-  content:"";
+.form-wrapper__body-5th::after {
+  content: "";
   position: absolute;
   bottom: rem(9);
-  right:rem(8);
+  right: rem(8);
   width: rem(12);
-  height:rem(12);
+  height: rem(12);
   aspect-ratio: 0.86603;
-  background: #408F95;
+  background: #408f95;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
-  transform:rotate(90deg);
+  transform: rotate(90deg);
 }
-
 
 .form-wrapper__text {
   width: 100%;
   padding: rem(8) rem(8) rem(9) rem(16);
-  font-size:rem(16);
-  font-weight:$regular;
-  font-family:"Noto Sans JP", sans-serif;
-  color:$navy;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
 }
 
 .form-wrapper__text::placeholder {
   color: $skyblue;
 }
 
+.form-wrapper__text.form-wrapper__text--error::placeholder {
+  color: $white;
+}
+
 .form-wrapper__inquiry {
   position: relative;
   padding-left: rem(22);
+}
 
+.form-wrapper__inquiry  input{
+  display: none;
 }
 
 .form-wrapper__inquiry::before {
@@ -130,30 +140,52 @@
   border: rem(1) solid $green;
 }
 
+.form-wrapper__inquiry::after {
+  content: "";
+  position: absolute;
+  top: rem(7);
+  left: rem(3);
+  display: inline-block;
+  width: rem(9);
+  height: rem(5);
+  opacity: 0;
+  border-left: rem(2) solid $orange;
+  border-bottom: rem(2) solid $orange;
+  transform: rotate(-45deg);
+}
+
+.form-wrapper__inquiry:has(input[type=checkbox]:checked)::after {
+  opacity: 1;
+}
+
+
 .form-wrapper__inquiry-text {
-  font-size:rem(16);
-  font-weight:$regular;
-  font-family:"Noto Sans JP", sans-serif;
-  color:$navy;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
 }
 
 .form-wrapper__select {
   width: 100%;
   padding: rem(11) rem(8) rem(12);
-  font-size:rem(12);
-  font-weight:$regular;
-  font-family:"Noto Sans JP", sans-serif;
-  color:$navy;
+  font-size: rem(12);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
   @include mq("md") {
     padding: rem(7) rem(20) rem(9) rem(8);
   }
 }
 
 .form-wrapper__textarea {
+  width: 100%;
   padding: rem(8);
   height: rem(200);
-  font-size:rem(16);
-  font-weight:$regular;
-  font-family:"Noto Sans JP", sans-serif;
-  color:$navy;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $navy;
+  resize: both;
 }
+

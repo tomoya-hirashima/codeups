@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .nav-group {
+  color: $white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -66,17 +67,15 @@
 
 .nav-group__item a {
   display: block;
-  // padding-top: rem(20);
-  // padding-bottom: rem(20);
   font-size: 1rem;
   font-weight: $regular;
   font-family: "Noto Sans JP";
   line-height: 1.125;
-  color: $white;
+
 }
 
-@media(any-hover:hover){
-  .nav-group__item a:hover{
+@media (any-hover: hover) {
+  .nav-group__item a:hover {
     opacity: 0.7;
   }
 }
@@ -94,7 +93,6 @@
   height: rem(18);
   background-image: url("../images/common/starfish.svg");
   background-size: cover;
-  // vertical-align: bottom;
 }
 
 .nav-group__item.nav-group__item--main a {
@@ -117,4 +115,20 @@
   @include mq("md") {
     display: none;
   }
+}
+
+// サイトマップ
+.nav-group.nav-group--navy{
+  color: $navy;
+}
+
+
+.nav-group__item.nav-group__item--main.nav-group-item--black a::before {
+  content: "";
+  margin-right: rem(4);
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  background-image: url("../images/common/starfish-black.svg");
+  background-size: cover;
 }
