@@ -23,8 +23,27 @@
 }
 
 .modal__content {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 63.88%;
+  max-height: 76.8%;
   width: 100%;
-  // background: #fff;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__img{
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.fixed {
+  overflow: hidden;
+  height: 100vh;
 }

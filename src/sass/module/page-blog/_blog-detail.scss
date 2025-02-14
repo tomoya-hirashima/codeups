@@ -8,10 +8,10 @@
   line-height: 1.285;
   font-weight: $medium;
   font-family: $base-font-family;
+  vertical-align: super;
 }
 
 .blog-detail__title {
-  margin-top: rem(8);
   padding-bottom: rem(8);
   border-bottom: rem(1) solid $green;
   font-size: rem(24);
@@ -19,7 +19,9 @@
   font-family: "Noto Sans JP";
 
   @include mq("md") {
+    margin-top: rem(4);
     font-size: rem(32);
+    line-height: 1;
   }
 }
 
@@ -50,7 +52,7 @@
   font-family: "Noto Sans JP";
 
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(37);
   }
 }
 

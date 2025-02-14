@@ -31,7 +31,7 @@
 .campaign-card__body {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  max-width: 88.571%;
+  max-width: 90.571%;
   width: 100%;
   margin-inline: auto;
 
@@ -45,7 +45,7 @@
 .campaign-card__category {
   display: inline-block;
   // width: 39%;
-  padding: 0.25rem 0.7rem;
+  padding: rem(3) 0.7rem;
   font-size: rem(12);
   line-height: 1.8333;
   font-family: "Noto Sans JP";
@@ -67,7 +67,7 @@
 .campaign-card__title {
   text-align: left;
   margin-top: rem(4);
-  padding-bottom: rem(8);
+  padding-bottom: rem(3);
   font-size: rem(16);
   font-weight: $medium;
   font-family: "Noto Sans JP";
@@ -80,7 +80,6 @@
 .campaign-card--detailed .campaign-card__title {
   @include mq("md") {
     font-size: rem(24);
-    line-height: 1;
   }
 }
 
@@ -90,7 +89,7 @@
   width: 100%;
 
   @include mq("md") {
-    padding-top: rem(16);
+    padding-top: rem(24);
   }
 }
 
@@ -116,6 +115,13 @@
 
   @include mq("md") {
     gap: 1.5rem;
+  }
+}
+
+.campaign-card__price.campaign-card__price--wide {
+
+  @include mq("md") {
+    gap: rem(40);
   }
 }
 

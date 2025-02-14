@@ -10,7 +10,7 @@
   cursor: pointer;
 
   @include mq("md") {
-    padding: rem(28) rem(72) rem(28) rem(40);
+    padding: rem(25) rem(72) rem(25) rem(40);
   }
 }
 
@@ -18,7 +18,7 @@
 .accordion-box__question::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: rem(16);
   width: rem(28);
   height: rem(1);
@@ -49,6 +49,10 @@
   font-weight: $regular;
   font-family: $base-font-family;
   color: $white;
+
+  @include mq("md") {
+  font-size: rem(20);
+  }
 }
 
 .accordion-box__answer {
@@ -58,6 +62,7 @@
 
   @include mq("md") {
     margin-top: rem(16);
+    padding: rem(40);
   }
 }
 
@@ -66,4 +71,5 @@
   font-weight: $regular;
   font-family: $base-font-family;
   color: $navy;
+  line-height: 1.41;
 }

@@ -9,3 +9,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.blog-cards__item{
+  max-width: rem(333);
+  margin: 0 auto;
+}

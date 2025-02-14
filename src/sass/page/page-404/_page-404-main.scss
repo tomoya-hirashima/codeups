@@ -2,8 +2,12 @@
 
 .page-404-main {
   background-color: $green;
-  padding-top: rem(98);
+  padding-top: rem(90);
   line-height: 1;
+
+  @include mq("md") {
+    padding-top: rem(100);
+  }
 }
 
 .page-404-main__breadcrumbs {
@@ -40,13 +44,13 @@
 
 
 .page-404-main__message {
-  padding-top: rem(54);
+  padding-top: rem(67);
   text-align: center;
   position: relative;
   z-index: 1;
 
   @include mq("md") {
-    padding-top: rem(121);
+    padding-top: rem(140);
   }
 }
 
@@ -71,7 +75,7 @@
   color: $white;
 
   @include mq("md") {
-    margin-top: rem(24);
+    margin-top: rem(40);
   }
 }
 
@@ -79,7 +83,7 @@
   margin-top: rem(40);
 
   @include mq("md") {
-    margin-top: rem(96);
+    margin-top: rem(80);
   }
 }
 

@@ -26,24 +26,30 @@
   margin-top: rem(40);
 
   @include mq("md") {
-  margin-top: rem(48);
+  margin-top: rem(34);
   }
 }
 
 .page-privacy-main__item {
 font-size:rem(16);
 font-weight:$regular;
-font-family: $base-font-family;
+font-family: "Noto Sans JP", sans-serif;
 line-height:2;
 color:$navy;
 }
 
 .page-privacy-main__item:not(:first-child){
-  margin-top: rem(40);
+  margin-top: rem(32);
+}
+
+.page-privacy-main__list-wrapper{
+  list-style: auto;
+  font-family: "Noto Sans JP", sans-serif;
+  padding-left: 1.5em;
 }
 
 
-.page-privacy-main__list {
-  padding-left: 1em;
-  text-indent: -1em;
-}
+// .page-privacy-main__list {
+//   padding-left: 1.5em;
+//   text-indent: -1.5em;
+// }

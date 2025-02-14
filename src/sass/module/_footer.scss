@@ -45,6 +45,7 @@ footer {
 .footer__icon {
   display: flex;
   gap: rem(16);
+  padding-bottom: rem(4);
 }
 
 .footer__icon-facebook,
@@ -68,10 +69,19 @@ footer {
 
 
 .footer__wrapper {
-  margin-top: rem(40);
+  margin-top: rem(35);
 
   @include mq("md") {
     margin-top: rem(24);
+  }
+}
+
+.footer__wrapper .nav-group__container.nav-group__container--3,
+.footer__wrapper .nav-group__container.nav-group__container--4{
+  margin-left: rem(12);
+
+  @include mq("md") {
+  margin-left: 0;
   }
 }
 

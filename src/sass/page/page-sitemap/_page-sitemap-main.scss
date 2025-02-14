@@ -3,4 +3,18 @@
 .page-sitemap-main {
 }
 
+.page-sitemap-main__navigation.nav-group {
+  @include mq("md") {
+    grid-template-columns: 15.38% 13.89% 13.89% 16.85%;
+    grid-column-gap: rem(144);
+  }
+}
 
+.page-sitemap-main__navigation .nav-group__container--3,
+.page-sitemap-main__navigation .nav-group__container--4 {
+  padding-left: rem(22);
+
+  @include mq("md") {
+    padding-left: 0;
+  }
+}

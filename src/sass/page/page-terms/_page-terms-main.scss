@@ -22,10 +22,6 @@
 
 .page-terms-main__items {
   margin-top: rem(40);
-
-  @include mq("md") {
-    margin-top: rem(48);
-  }
 }
 
 .page-terms-main__item {
@@ -37,10 +33,19 @@
 }
 
 .page-terms-main__item:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(30);
 }
 
-.page-terms-main__list {
-  padding-left: 1em;
-  text-indent: -1em;
+.page-terms-main__item:last-child{
+  margin-top: rem(33);
+}
+
+.page-terms-main__list-wrapper{
+  font-family: "Noto Sans JP", sans-serif;
+  list-style: auto;
+  padding-left: 1.5em;
+}
+
+.page-terms-main__text-1{
+  margin-top: rem(3);
 }

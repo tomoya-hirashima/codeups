@@ -13,7 +13,7 @@
 
 
 .page-about-main__gallery{
-  margin-top: rem(40);
+  margin-top: rem(37);
 
   @include mq("md") {
     margin-top: rem(120);
@@ -21,7 +21,7 @@
 }
 
 .page-about-main__gallery-container{
-  margin-top: rem(40);
+  margin-top: rem(45);
 
   @include mq("md") {
     margin-top: rem(80);

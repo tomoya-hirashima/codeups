@@ -35,14 +35,9 @@
 
 .blog-card__body {
   flex-grow: 1;
-  margin-top: rem(17);
+  margin-top: rem(24);
   display: flex;
   flex-direction: column;
-
-
-  @include mq("md") {
-  margin-top: rem(17);
-  }
 }
 
 .blog-card__date {

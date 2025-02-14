@@ -1,13 +1,23 @@
 @use "global" as *;
 
-.page-campaign-cards{
-  display:grid;
-  grid-template-columns: 1fr;
+.page-campaign-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   column-gap: rem(40);
-  row-gap:rem(80);
+  row-gap: rem(40);
 
   @include mq("md") {
     grid-template-columns: 1fr 1fr;
+    row-gap: rem(80);
   }
+}
 
+.page-campaign-cards__item {
+  max-width: rem(280);
+  margin: auto;
+
+  @include mq("md") {
+    max-width: rem(520);
+    margin: 0;
+  }
 }

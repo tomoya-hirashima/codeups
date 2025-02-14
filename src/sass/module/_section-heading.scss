@@ -21,7 +21,7 @@
 }
 
 .section-heading__sub {
-  margin-top: rem(4);
+  margin-top: 0;
   font-size: rem(12);
   font-weight: $regular;
   line-height: 1.5;
@@ -29,10 +29,21 @@
   font-family: "Noto Sans JP";
 
   @include mq("md") {
-    margin-top: rem(8);
+  margin-top:rem(8);
   }
 }
 
+// コンタクト
+.section-heading__main.section-heading__main--big {
+  font-size: rem(80);
+  line-height: 1;
+}
+
+.contact__heading .section-heading__sub{
+  @include mq("md") {
+    margin-top:0;
+    }
+}
 
 // ブログタイトル
 .section-heading__main.section-heading__main--color{

@@ -10,7 +10,7 @@
   @include mq("md") {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
-    grid-column-gap: rem(25);
+    grid-column-gap: rem(28);
     grid-row-gap: 0;
   }
 }

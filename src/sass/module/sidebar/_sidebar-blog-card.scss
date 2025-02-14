@@ -33,16 +33,21 @@
   object-fit: cover;
 }
 
+.sidebar-blog-card__body{
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar-blog-card__date {
   font-size: rem(12);
   line-height: 1.5;
   font-weight: $regular;
+  vertical-align: super;
 }
 
 .sidebar-blog-card__title {
   margin-top: rem(4);
   font-size: rem(16);
-  line-height: 1.5;
   font-weight: $medium;
   font-family: "Noto Sans JP";
 }

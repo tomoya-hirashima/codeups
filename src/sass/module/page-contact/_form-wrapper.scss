@@ -60,7 +60,7 @@
 .form-wrapper__body {
   width: 100%;
   border: rem(1) solid $green;
-  margin-top: rem(8);
+  margin-top: rem(12);
   @include mq("md") {
     width: 68.57%;
     margin-top: 0;
@@ -76,7 +76,6 @@
 .form-wrapper__body-4th {
   display: flex;
   flex-direction: column;
-  gap: rem(4);
 
   @include mq("md") {
     gap: rem(6);
@@ -94,19 +93,27 @@
 .form-wrapper__body-5th::after {
   content: "";
   position: absolute;
-  bottom: rem(9);
+  bottom: rem(18);
   right: rem(8);
-  width: rem(12);
-  height: rem(12);
+  width: rem(10);
+  height: rem(10);
   aspect-ratio: 0.86603;
   background: #408f95;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   transform: rotate(90deg);
+
+  @include mq("md") {
+    bottom: 33%;
+  }
+}
+
+.form-wrapper__body.form-wrapper__body-6th {
+ height: rem(200);
 }
 
 .form-wrapper__text {
   width: 100%;
-  padding: rem(8) rem(8) rem(9) rem(16);
+  padding: rem(6.5) rem(8) rem(6.5) rem(16);
   font-size: rem(16);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
@@ -168,20 +175,20 @@
 
 .form-wrapper__select {
   width: 100%;
-  padding: rem(11) rem(8) rem(12);
+  padding: rem(11) rem(8);
   font-size: rem(12);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
   color: $navy;
   @include mq("md") {
-    padding: rem(7) rem(20) rem(9) rem(8);
+    padding: 0 rem(20) 0 rem(8);
   }
 }
 
 .form-wrapper__textarea {
   width: 100%;
-  padding: rem(8);
-  height: rem(200);
+  padding:rem(8);
+  height: inherit;
   font-size: rem(16);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;

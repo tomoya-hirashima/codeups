@@ -129,53 +129,53 @@ $(function () {
   // モーダル(about)
   // $(function () {
   //   const open = $(".js-modal-open"),
-  //     close = $(".js-modal__close"),
-  //     modal = $(".js-modal");
+  //   modal = $(".js-modal");
 
   //   //開くボタンをクリックしたらモーダルを表示する
   //   open.on("click", function () {
   //     modal.addClass("is-open");
   //   });
 
-  //   //閉じるボタンをクリックしたらモーダルを閉じる
-  //   close.add(modal).on("click", function () {
+  //   //モーダルをクリックしたら閉じる
+  //   modal.on("click", function () {
   //     modal.removeClass("is-open");
   //   });
   // });
 
-  // 必要な要素を取得
   $(function () {
-    const galleryItems = document.querySelectorAll(".gallery-container__img");
-    const modal = document.getElementById("modal");
-    const modalImage = document.getElementById("modalImage");
-    const modalClose = document.getElementById("modalClose");
+    const $galleryItems = $(".js-modal-open");
+    const $modal = $(".js-modal");
+    const $modalImage = $(".modal__img");
 
-    // 各ギャラリー画像にクリックイベントを追加
-    galleryItems.forEach((item) => {
-      item.addEventListener("click", (e) => {
-        const imageUrl = e.target.src; // クリックした画像のURLを取得
-        modalImage.src = imageUrl; // モーダルの画像に設定
-        modal.classList.add("is-open"); // モーダルを表示
-      });
-    });
-
-    // モーダルの閉じるボタンの処理
-    modalClose.addEventListener("click", () => {
-      modal.classList.remove("is-open"); // モーダルを非表示
-      modalImage.src = ""; // 画像をリセット
+    // 各ギャラリー画像をクリックしたらモーダルを開く
+    $galleryItems.on("click", function () {
+      const imageUrl = $(this).attr("src"); // クリックした画像のURLを取得
+      $modalImage.attr("src", imageUrl); // モーダルの画像に設定
+      $modal.addClass("is-open"); // モーダルを表示
     });
 
     // モーダルの外側をクリックした際に閉じる
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.classList.remove("is-open");
-        modalImage.src = "";
+    $modal.on("click", function (e) {
+      if (e.target === this) {
+        $modal.removeClass("is-open");
+        $modalImage.attr("src", "");
       }
     });
   });
 
-   //タブの切り替え(info)
-   $(function () {
+  // モーダルウィンドウオープン時の背景固定
+  $(function () {
+    $(".js-modal-open").on("click", function () {
+      $("body").addClass("fixed");
+    });
+
+    $(".js-modal").on("click", function () {
+      $("body").removeClass("fixed");
+    });
+  });
+
+  //タブの切り替え(info)
+  $(function () {
     const infoTabButton = $(".js-info-tab"),
       infoTabContent = $(".js-info-tab-content");
     infoTabButton.on("click", function () {
@@ -188,15 +188,15 @@ $(function () {
     });
   });
 
-     //トグル展開(サイドバー)
-     $(function () {
-      $(".js-archive-year").on("click", function () {
-        $(this).toggleClass("is-open");
-        $(this).next().slideToggle(300);
-      });
+  //トグル展開(サイドバー)
+  $(function () {
+    $(".js-archive-year").on("click", function () {
+      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(300);
     });
+  });
 
-    //タブの切り替え(voice)
+  //タブの切り替え(voice)
   $(function () {
     const tabButton = $(".js-voice-tab"),
       tabContent = $(".js-tab-content");
@@ -212,10 +212,7 @@ $(function () {
 
   //アコーディオン(FAQ)
   $(function () {
-    $(".js-accordion-box__answer").css(
-      "display",
-      "block"
-    );
+    $(".js-accordion-box__answer").css("display", "block");
     $(".js-accordion-box__question").addClass("is-open");
     $(".js-accordion-box__question").on("click", function () {
       $(this).toggleClass("is-open");
@@ -223,5 +220,17 @@ $(function () {
     });
   });
 
-});
+  // aタグクリック時の高さ調整
+  $(function () {
+    let headerHeight = $('#js-header').outerHeight();
+    let speed = 600;
 
+    $('a[href^="#"]').click(function () {
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? "html" : href);
+      let position = target.offset().top - headerHeight;
+      $("html, body").stop().animate({ scrollTop: position }, speed, "swing");
+      return false;
+    });
+  });
+});
