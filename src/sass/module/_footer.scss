@@ -36,7 +36,7 @@ footer {
 }
 
 @media(any-hover:hover){
-  .footer-logo a:hover{
+  .footer__logo a:hover{
     opacity: 0.7;
   }
 }
@@ -61,11 +61,12 @@ footer {
 }
 
 @media(any-hover:hover){
-  .btn-facebook a:hover ,
-  .btn-instagram a:hover{
+  .footer__icon-facebook a:hover,
+  .footer__icon-instagram a:hover{
     opacity: 0.7;
   }
 }
+
 
 
 .footer__wrapper {

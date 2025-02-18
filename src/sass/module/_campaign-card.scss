@@ -162,6 +162,16 @@
   }
 }
 
+.campaign-card__description{
+  @include mq("md") {
+    font-size:rem(16);
+    font-weight:$regular;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height:1.5;
+    color:$black;
+  }
+}
+
 .campaign-card__period{
   @include mq("md") {
     margin-top: rem(32);
@@ -179,7 +189,7 @@
     margin-top: rem(7);
     font-size:rem(14);
     font-weight:$regular;
-    font-family:$base-font-family;
+    font-family: "Noto Sans JP", sans-serif;
     line-height:1.2857;
     color: $green;
     text-align: center;

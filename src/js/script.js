@@ -46,9 +46,9 @@ $(function () {
     slidesPerView: "auto",
     grabCursor: true,
     spaceBetween: 24,
-    // autoplay: {
-    //     delay: 1000,
-    // },
+    autoplay: {
+        delay: 1000,
+    },
 
     breakpoints: {
       768: {
@@ -220,17 +220,27 @@ $(function () {
     });
   });
 
-  // aタグクリック時の高さ調整
-  $(function () {
-    let headerHeight = $('#js-header').outerHeight();
-    let speed = 600;
+  // //リンク遷移先
+  // $(function () {
+  //   // ヘッダーの高さを取得（padding や border を含む）
+  //   const headerHeight = $(".js-header").outerHeight();
 
-    $('a[href^="#"]').click(function () {
-      let href = $(this).attr("href");
-      let target = $(href == "#" || href == "" ? "html" : href);
-      let position = target.offset().top - headerHeight;
-      $("html, body").stop().animate({ scrollTop: position }, speed, "swing");
-      return false;
-    });
+  //   // ヘッダーの高さ分だけ main の位置を調整
+  //   $("main").css("margin-top", headerHeight);
+
+  //   // ページ内スクロール
+  //   $('a[href^="#"]').click(function (event) {
+  //     event.preventDefault(); // デフォルトの動作を無効化
+
+  //     const speed = 600;
+  //     const href = $(this).attr("href");
+  //     const target = $(href === "#" || href === "" ? "html" : href);
+
+  //     if (!target.length) return; // ターゲットがない場合は処理を中断
+
+  //     const position = target.offset().top - headerHeight;
+
+  //     $("html").animate({ scrollTop: position }, speed, "swing");
+  //   });
   });
-});
+

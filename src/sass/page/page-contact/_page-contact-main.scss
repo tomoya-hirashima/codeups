@@ -18,10 +18,10 @@
 }
 
 .page-contact-main__error-text {
-  font-size:rem(14);
-  font-weight:$regular;
+  font-size: rem(14);
+  font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color:$orange;
+  color: $orange;
 }
 
 .page-contact-main__container.page-contact-main__container--error {
@@ -35,19 +35,19 @@
 // 送信完了
 .page-contact-main__announce {
   text-align: center;
-  font-size:rem(16);
-  font-weight:$regular;
+  font-size: rem(16);
+  font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color:$navy;
+  color: $black;
   line-height: 1.125;
 }
 
 .page-contact-main__message {
   text-align: center;
   margin-top: rem(40);
-  font-size:rem(16);
-  font-weight:$regular;
+  font-size: rem(16);
+  font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color:$navy;
+  color: $black;
   line-height: 1.41;
-} 
+}

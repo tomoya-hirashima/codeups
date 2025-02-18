@@ -2,28 +2,27 @@
 
 .page-about-contents {
   position: relative;
-
 }
 
 .page-about-contents__img-container {
   position: relative;
 }
 
-.page-about-contents__img-container::after{
-display: none;
+.page-about-contents__img-container::after {
+  display: none;
 
   @include mq("md") {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  bottom: -10.5625rem;
-  right: calc(50% - min(47.5vw, 59.3%));
-  width: rem(301);
-  height: rem(138);
-  background-image: url(../images/common/contact-back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 10;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    bottom: -10.5625rem;
+    right: calc(50% - min(47.5vw, 59.3%));
+    width: rem(301);
+    height: rem(138);
+    background-image: url(../images/common/contact-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
   }
 }
 
@@ -38,6 +37,12 @@ display: none;
 
 .page-about-contents__img1 img {
   width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345 / 228;
+
+  @include mq("md") {
+    aspect-ratio: 880 / 581;
+  }
 }
 
 .page-about-contents__img2 {
@@ -55,12 +60,16 @@ display: none;
 }
 
 .page-about-contents__img2 img {
-  width: 100%;
+  @include mq("md") {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 400 / 606;
+  }
 }
 
-.page-about-contents__message-title{
+.page-about-contents__message-title {
   position: absolute;
-  top: 10.5%;  /* 24/228 % */
+  top: 10.5%; /* 24/228 % */
   left: 6.95%; /* 24/345 % */
   font-size: rem(40);
   line-height: 1;

@@ -3,9 +3,7 @@
 .page-privacy-main {
 }
 
-
-.page-privacy-main__inner.inner{
-
+.page-privacy-main__inner.inner {
   @include mq("md") {
     max-width: rem(850);
   }
@@ -14,11 +12,11 @@
 .page-privacy-main__title {
   font-size: rem(24);
   font-weight: $medium;
-  font-family: $base-font-family;
-  color: $navy;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
 
   @include mq("md") {
-  font-size: rem(32);
+    font-size: rem(32);
   }
 }
 
@@ -26,28 +24,27 @@
   margin-top: rem(40);
 
   @include mq("md") {
-  margin-top: rem(34);
+    margin-top: rem(34);
   }
 }
 
 .page-privacy-main__item {
-font-size:rem(16);
-font-weight:$regular;
-font-family: "Noto Sans JP", sans-serif;
-line-height:2;
-color:$navy;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 2;
+  color: $black;
 }
 
-.page-privacy-main__item:not(:first-child){
+.page-privacy-main__item:not(:first-child) {
   margin-top: rem(32);
 }
 
-.page-privacy-main__list-wrapper{
+.page-privacy-main__list-wrapper {
   list-style: auto;
   font-family: "Noto Sans JP", sans-serif;
   padding-left: 1.5em;
 }
-
 
 // .page-privacy-main__list {
 //   padding-left: 1.5em;

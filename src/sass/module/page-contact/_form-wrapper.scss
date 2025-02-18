@@ -29,7 +29,7 @@
   font-size: rem(16);
   font-weight: $bold;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
 
   @include mq("md") {
     width: 31.42%;
@@ -67,10 +67,9 @@
   }
 }
 
-.form-wrapper__body.form-wrapper__body--error{
+.form-wrapper__body.form-wrapper__body--error {
   border: rem(1) solid $orange;
-  background-color:rgba($color:$orange, $alpha: 0.2);
-
+  background-color: rgba($color: $orange, $alpha: 0.2);
 }
 
 .form-wrapper__body-4th {
@@ -108,7 +107,17 @@
 }
 
 .form-wrapper__body.form-wrapper__body-6th {
- height: rem(200);
+  height: rem(200);
+  overflow: scroll;
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+
+/*スクロールバー非表示（Chrome・Safari）*/
+.content::-webkit-scrollbar {
+  display: none;
 }
 
 .form-wrapper__text {
@@ -117,7 +126,7 @@
   font-size: rem(16);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
 }
 
 .form-wrapper__text::placeholder {
@@ -133,7 +142,7 @@
   padding-left: rem(22);
 }
 
-.form-wrapper__inquiry  input{
+.form-wrapper__inquiry input {
   display: none;
 }
 
@@ -161,16 +170,15 @@
   transform: rotate(-45deg);
 }
 
-.form-wrapper__inquiry:has(input[type=checkbox]:checked)::after {
+.form-wrapper__inquiry:has(input[type="checkbox"]:checked)::after {
   opacity: 1;
 }
-
 
 .form-wrapper__inquiry-text {
   font-size: rem(16);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
 }
 
 .form-wrapper__select {
@@ -179,7 +187,7 @@
   font-size: rem(12);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
   @include mq("md") {
     padding: 0 rem(20) 0 rem(8);
   }
@@ -187,12 +195,11 @@
 
 .form-wrapper__textarea {
   width: 100%;
-  padding:rem(8);
+  padding: rem(8);
   height: inherit;
   font-size: rem(16);
   font-weight: $regular;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
   resize: both;
 }
-

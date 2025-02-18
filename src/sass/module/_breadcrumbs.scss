@@ -8,9 +8,9 @@
   display: flex;
   gap: rem(8);
   font-size: rem(14);
-  font-weight: $medium;
+  font-weight: $regular;
   font-family: "Noto Sans JP";
-  color: $navy;
+  color: $black;
 }
 
 .breadcrumbs__items.breadcrumbs__items--white {
@@ -37,8 +37,7 @@
   }
 }
 
-.breadcrumbs__items.breadcrumbs__items--imgnon:before{
-
+.breadcrumbs__items.breadcrumbs__items--imgnon:before {
   @include mq("md") {
     display: none;
   }

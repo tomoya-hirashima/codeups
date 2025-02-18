@@ -7,7 +7,7 @@
   right: 0;
   width: 100%;
   height: rem(80);
-  background-color: rgba($navy, 0.68);
+  background-color: rgba($black, 0.68);
   z-index: 8888;
 
   @include mq("md") {
@@ -15,7 +15,7 @@
   }
 }
 
-.js-header.is-open{
+.js-header.is-open {
   background-color: $green;
 }
 
@@ -31,6 +31,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: rem(20);
   }
 }
 
@@ -93,7 +94,7 @@
 }
 
 // ドロワーメニュー
-.header__drawer{
+.header__drawer {
   display: none;
   position: absolute;
   top: 0;

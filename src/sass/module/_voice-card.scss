@@ -50,6 +50,7 @@
   font-size: rem(12);
   line-height: 1.5;
   font-weight: $regular;
+  color: $black;
 }
 
 .voice-card__category {
@@ -68,6 +69,7 @@
 .voice-card__title {
   font-size: rem(16);
   font-weight: $medium;
+  color:$black;
 
   @include mq("md") {
     margin-top: rem(8);
@@ -98,6 +100,7 @@
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $regular;
+  color: $black;
 
   @include mq("md") {
     margin-top: rem(40);

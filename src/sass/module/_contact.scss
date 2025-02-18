@@ -164,6 +164,7 @@
   line-height: 1.2857;
   color: $green;
   text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
 
   @include mq("md") {
   margin-top: rem(8);

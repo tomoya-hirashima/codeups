@@ -36,6 +36,8 @@
   padding-left: rem(30);
   font-size: rem(14);
   line-height: 1.571;
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
 
   @include mq("md") {
     padding-left: rem(38);

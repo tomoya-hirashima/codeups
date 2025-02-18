@@ -42,6 +42,7 @@
   font-size: rem(12);
   line-height: 1.5;
   font-weight: $regular;
+  color: $black;
   vertical-align: super;
 }
 
@@ -50,6 +51,7 @@
   font-size: rem(16);
   font-weight: $medium;
   font-family: "Noto Sans JP";
+  color: $black;
 }
 
 .sidebar-blog-card__text {

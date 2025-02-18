@@ -63,7 +63,8 @@
   font-weight: $regular;
   font-size: rem(14);
   line-height: 1.7142;
-  font-family: "Noto Sans JP";
+  font-family: "Noto Sans JP", sans-serif;
+  color: $black;
 }
 
 .sidebar-campaign-card__price {

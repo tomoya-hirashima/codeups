@@ -71,7 +71,6 @@
   font-weight: $regular;
   font-family: "Noto Sans JP";
   line-height: 1.125;
-
 }
 
 @media (any-hover: hover) {
@@ -118,10 +117,9 @@
 }
 
 // サイトマップ
-.nav-group.nav-group--navy{
-  color: $navy;
+.nav-group.nav-group--black {
+  color: $black;
 }
-
 
 .nav-group__item.nav-group__item--main.nav-group-item--black a::before {
   content: "";

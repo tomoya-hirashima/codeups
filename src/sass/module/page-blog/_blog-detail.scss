@@ -7,7 +7,7 @@
   font-size: rem(14);
   line-height: 1.285;
   font-weight: $medium;
-  font-family: $base-font-family;
+  font-family: $third-font-family;
   vertical-align: super;
 }
 
@@ -50,6 +50,7 @@
   line-height: 1.5;
   font-weight: $regular;
   font-family: "Noto Sans JP";
+  color: $black;
 
   @include mq("md") {
     margin-top: rem(37);

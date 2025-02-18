@@ -13,7 +13,7 @@
   font-size: rem(24);
   font-weight: $medium;
   font-family: "Noto Sans JP", sans-serif;
-  color: $navy;
+  color: $black;
 
   @include mq("md") {
     font-size: rem(32);
@@ -27,25 +27,25 @@
 .page-terms-main__item {
   font-size: rem(16);
   font-weight: $regular;
-  font-family: $base-font-family;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 2;
-  color: $navy;
+  color: $black;
 }
 
 .page-terms-main__item:not(:first-child) {
   margin-top: rem(30);
 }
 
-.page-terms-main__item:last-child{
+.page-terms-main__item:last-child {
   margin-top: rem(33);
 }
 
-.page-terms-main__list-wrapper{
+.page-terms-main__list-wrapper {
   font-family: "Noto Sans JP", sans-serif;
   list-style: auto;
   padding-left: 1.5em;
 }
 
-.page-terms-main__text-1{
+.page-terms-main__text-1 {
   margin-top: rem(3);
 }

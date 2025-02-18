@@ -40,14 +40,14 @@
   <body>
     <header class="header js-header">
       <div class="header__inner">
-        <h1 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
             <img
               src="./assets/images/common/header-logo-img.svg"
               alt="CodeUps"
             />
           </a>
-        </h1>
+        </div>
         <nav class="header__nav nav-bar">
           <ul class="nav-bar__items">
             <li class="nav-bar__item">
@@ -113,17 +113,21 @@
               <!-- キャンペーンコンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">キャンペーン</a>
-                </li>
-                <li class="nav-group__item"><a href="#">ライセンス取得</a></li>
-                <li class="nav-group__item">
-                  <a href="#">貸切体験ダイビング</a>
+                  <a href="./page-campaign.html">キャンペーン</a>
                 </li>
                 <li class="nav-group__item">
-                  <a href="#">ナイトダイビング</a>
+                  <a href="./page-campaign.html#license">ライセンス取得</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-campaign.html#private-booking"
+                    >貸切体験ダイビング</a
+                  >
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-campaign.html#night-diving">ナイトダイビング</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">私たちについて</a>
+                  <a href="./page-about.html">私たちについて</a>
                 </li>
               </ul>
             </div>
@@ -131,15 +135,19 @@
               <!-- ダイビング情報コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">ダイビング情報</a>
+                  <a href="./page-info.html">ダイビング情報</a>
                 </li>
-                <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-                <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
                 <li class="nav-group__item">
-                  <a href="#">ファンダイビング</a>
+                  <a href="./page-info.html">ライセンス講習</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-info.html">体験ダイビング</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-info.html">ファンダイビング</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">ブログ</a>
+                  <a href="./page-blog.html">ブログ</a>
                 </li>
               </ul>
             </div>
@@ -147,15 +155,19 @@
               <!-- お客様の声コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">お客様の声</a>
+                  <a href="./page-voice.html">お客様の声</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">料金一覧</a>
+                  <a href="./page-price.html">料金一覧</a>
                 </li>
-                <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-                <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
                 <li class="nav-group__item">
-                  <a href="#">ファンダイビング</a>
+                  <a href="./page-price.html#license">ライセンス講習</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-price.html#trial-diving">体験ダイビング</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-price.html#fun-diving">ファンダイビング</a>
                 </li>
               </ul>
             </div>
@@ -163,19 +175,19 @@
               <!-- よくある質問コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">よくある質問</a>
+                  <a href="./page-faq.html">よくある質問</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#"
-                    >プライバシー<br />
+                  <a href="./page-privacy.html"
+                    >プライバシー<br class="footer-md-none" />
                     <p class="nav-group__container4--indent">ポリシー</p>
                   </a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">利用規約</a>
+                  <a href="./page-terms.html">利用規約</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">お問い合わせ</a>
+                  <a href="./page-contact.html">お問い合わせ</a>
                 </li>
               </ul>
             </div>
@@ -367,7 +379,7 @@
             <div class="contact__container2">
               <div class="contact__heading section-heading">
                 <p class="section-heading__main section-heading__main--big">contact</p>
-                <h2 class="section-heading__sub">お問い合わせ</h2>
+                <h3 class="section-heading__sub">お問い合わせ</h3>
               </div>
               <p class="contact__induction">ご予約・お問い合わせはコチラ</p>
               <div class="contact__button">
@@ -382,11 +394,11 @@
     <footer class="footer l-footer">
       <div class="footer__inner inner">
         <div class="footer__heading">
-          <h2 class="footer__logo">
+          <div class="footer__logo">
             <a href="index.html">
               <img src="./assets/images/common/footer-logo.svg" alt="CodeUps" />
             </a>
-          </h2>
+          </div>
           <ul class="footer__icon">
             <li class="footer__icon-facebook">
               <a href="#" target="_blank" rel="noopener noreferrer"
@@ -409,15 +421,21 @@
             <!-- キャンペーンコンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">キャンペーン</a>
+                <a href="./page-campaign.html">キャンペーン</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス取得</a></li>
               <li class="nav-group__item">
-                <a href="#">貸切体験ダイビング</a>
+                <a href="./page-campaign.html#license">ライセンス取得</a>
               </li>
-              <li class="nav-group__item"><a href="#">ナイトダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-campaign.html#private-booking"
+                  >貸切体験ダイビング</a
+                >
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-campaign.html#night-diving">ナイトダイビング</a>
+              </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">私たちについて</a>
+                <a href="./page-about.html">私たちについて</a>
               </li>
             </ul>
           </div>
@@ -425,13 +443,19 @@
             <!-- ダイビング情報コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="">ダイビング情報</a>
+                <a href="./page-info.html">ダイビング情報</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-              <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
-              <li class="nav-group__item"><a href="#">ファンダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">ライセンス講習</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">体験ダイビング</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">ファンダイビング</a>
+              </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">ブログ</a>
+                <a href="./page-blog.html">ブログ</a>
               </li>
             </ul>
           </div>
@@ -439,33 +463,39 @@
             <!-- お客様の声コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">お客様の声</a>
+                <a href="./page-voice.html">お客様の声</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">料金一覧</a>
+                <a href="./page-price.html">料金一覧</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-              <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
-              <li class="nav-group__item"><a href="#">ファンダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#license">ライセンス講習</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#trial-diving">体験ダイビング</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#fun-diving">ファンダイビング</a>
+              </li>
             </ul>
           </div>
           <div class="nav-group__container nav-group__container--4">
             <!-- よくある質問コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">よくある質問</a>
+                <a href="./page-faq.html">よくある質問</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#"
+                <a href="./page-privacy.html"
                   >プライバシー<br class="footer-md-none" />
                   <p class="nav-group__container4--indent">ポリシー</p>
                 </a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">利用規約</a>
+                <a href="./page-terms.html">利用規約</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">お問い合わせ</a>
+                <a href="./page-contact.html">お問い合わせ</a>
               </li>
             </ul>
           </div>

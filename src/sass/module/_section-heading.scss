@@ -8,6 +8,7 @@
   font-size: rem(32);
   font-weight: $regular;
   line-height: 1.25;
+  color: $black;
 
   @include mq("md") {
     font-size: rem(40);
@@ -29,7 +30,7 @@
   font-family: "Noto Sans JP";
 
   @include mq("md") {
-  margin-top:rem(8);
+    margin-top: rem(8);
   }
 }
 
@@ -39,14 +40,14 @@
   line-height: 1;
 }
 
-.contact__heading .section-heading__sub{
+.contact__heading .section-heading__sub {
   @include mq("md") {
-    margin-top:0;
-    }
+    margin-top: 0;
+  }
 }
 
 // ブログタイトル
-.section-heading__main.section-heading__main--color{
+.section-heading__main.section-heading__main--color {
   @include mq("md") {
     color: $white;
   }
@@ -58,6 +59,6 @@
   }
 }
 
-.section-heading__sub.section-heading__sub--white{
+.section-heading__sub.section-heading__sub--white {
   color: $white;
 }

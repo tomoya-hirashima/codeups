@@ -40,14 +40,14 @@
   <body>
     <header class="header js-header">
       <div class="header__inner">
-        <h1 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
             <img
               src="./assets/images/common/header-logo-img.svg"
               alt="CodeUps"
             />
           </a>
-        </h1>
+        </div>
         <nav class="header__nav nav-bar">
           <ul class="nav-bar__items">
             <li class="nav-bar__item">
@@ -113,17 +113,21 @@
               <!-- キャンペーンコンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">キャンペーン</a>
-                </li>
-                <li class="nav-group__item"><a href="#">ライセンス取得</a></li>
-                <li class="nav-group__item">
-                  <a href="#">貸切体験ダイビング</a>
+                  <a href="./page-campaign.html">キャンペーン</a>
                 </li>
                 <li class="nav-group__item">
-                  <a href="#">ナイトダイビング</a>
+                  <a href="./page-campaign.html#license">ライセンス取得</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-campaign.html#private-booking"
+                    >貸切体験ダイビング</a
+                  >
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-campaign.html#night-diving">ナイトダイビング</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">私たちについて</a>
+                  <a href="./page-about.html">私たちについて</a>
                 </li>
               </ul>
             </div>
@@ -131,15 +135,19 @@
               <!-- ダイビング情報コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">ダイビング情報</a>
+                  <a href="./page-info.html">ダイビング情報</a>
                 </li>
-                <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-                <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
                 <li class="nav-group__item">
-                  <a href="#">ファンダイビング</a>
+                  <a href="./page-info.html">ライセンス講習</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-info.html">体験ダイビング</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-info.html">ファンダイビング</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">ブログ</a>
+                  <a href="./page-blog.html">ブログ</a>
                 </li>
               </ul>
             </div>
@@ -147,15 +155,19 @@
               <!-- お客様の声コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">お客様の声</a>
+                  <a href="./page-voice.html">お客様の声</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">料金一覧</a>
+                  <a href="./page-price.html">料金一覧</a>
                 </li>
-                <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-                <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
                 <li class="nav-group__item">
-                  <a href="#">ファンダイビング</a>
+                  <a href="./page-price.html#license">ライセンス講習</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-price.html#trial-diving">体験ダイビング</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="./page-price.html#fun-diving">ファンダイビング</a>
                 </li>
               </ul>
             </div>
@@ -163,19 +175,19 @@
               <!-- よくある質問コンテナ -->
               <ul class="nav-group__items">
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">よくある質問</a>
+                  <a href="./page-faq.html">よくある質問</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#"
-                    >プライバシー<br />
+                  <a href="./page-privacy.html"
+                    >プライバシー<br class="footer-md-none" />
                     <p class="nav-group__container4--indent">ポリシー</p>
                   </a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">利用規約</a>
+                  <a href="./page-terms.html">利用規約</a>
                 </li>
                 <li class="nav-group__item nav-group__item--main">
-                  <a href="#">お問い合わせ</a>
+                  <a href="./page-contact.html">お問い合わせ</a>
                 </li>
               </ul>
             </div>
@@ -207,73 +219,130 @@
         </div>
       </nav>
 
-      <section id="page-contact-main" class="page-contact-main l-page-contact-error">
+      <section
+        id="page-contact-main"
+        class="page-contact-main l-page-contact-error"
+      >
         <div class="page-contact-main__inner inner">
           <div class="page-contact-main__error">
-            <p class="page-contact-main__error-text">※必須項目が入力されていません。<br class="u-mobile">入力してください。</p>
-         </div>
-          <div class="page-contact-main__container page-contact-main__container--error">
-            <form action="" method="" class="page-contact-main__form form">
+            <h2 class="page-contact-main__error-text">
+              ※必須項目が入力されていません。<br
+                class="u-mobile"
+              />入力してください。
+            </h2>
+          </div>
+          <div
+            class="page-contact-main__container page-contact-main__container--error"
+          >
+            <form action="hogehoge.jp/hoge.php" method="post" class="page-contact-main__form form">
               <table class="form__table">
                 <tr class="form__wrapper form-wrapper">
                   <th class="form-wrapper__item"><span>お名前</span></th>
                   <td class="form-wrapper__body form-wrapper__body--error">
-                    <input type="text" name="名前" class="form-wrapper__text form-wrapper__text--error"  placeholder="沖縄&emsp;太郎"/>
+                    <input
+                      type="text"
+                      name="名前"
+                      class="form-wrapper__text form-wrapper__text--error"
+                      placeholder="沖縄&emsp;太郎"
+                    />
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
-                  <th class="form-wrapper__item"><span>メールアドレス</span></th>
+                  <th class="form-wrapper__item">
+                    <span>メールアドレス</span>
+                  </th>
                   <td class="form-wrapper__body">
-                    <input type="email" name="メール" class="form-wrapper__text" placeholder="aaa000@ggmail.com"/>
+                    <input
+                      type="email"
+                      name="メール"
+                      class="form-wrapper__text"
+                      placeholder="aaa000@ggmail.com"
+                    />
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
                   <th class="form-wrapper__item"><span>電話番号</span></th>
                   <td class="form-wrapper__body">
-                    <input type="tel" name="電話" class="form-wrapper__text" placeholder="000-0000-0000"/>
+                    <input
+                      type="tel"
+                      name="電話"
+                      class="form-wrapper__text"
+                      placeholder="000-0000-0000"
+                    />
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
-                  <th class="form-wrapper__item"><span>お問い合わせ項目</span></th>
-                  <td class="form-wrapper__body  form-wrapper__body-4th">
+                  <th class="form-wrapper__item">
+                    <span>お問い合わせ項目</span>
+                  </th>
+                  <td class="form-wrapper__body form-wrapper__body-4th">
                     <label class="form-wrapper__inquiry">
-                      <input type="checkbox" name="問い合わせ" value="diving-license" />
-                      <span class="form-wrapper__inquiry-text">ダイビング講習について</span>
+                      <input
+                        type="checkbox"
+                        name="diving-course"
+                        value="diving-license"
+                      />
+                      <span class="form-wrapper__inquiry-text"
+                        >ダイビング講習について</span
+                      >
                     </label>
                     <label class="form-wrapper__inquiry">
-                      <input type="checkbox" name="問い合わせ" value="fun-diving"/>
-                      <span class="form-wrapper__inquiry-text">ファンダイビングについて</span>
+                      <input
+                        type="checkbox"
+                        name="diving-course"
+                        value="fun-diving"
+                      />
+                      <span class="form-wrapper__inquiry-text"
+                        >ファンダイビングについて</span
+                      >
                     </label>
                     <label class="form-wrapper__inquiry">
-                      <input type="checkbox" name="問い合わせ" value="try-diving"/>
-                      <span class="form-wrapper__inquiry-text">体験ダイビングについて</span>
+                      <input
+                        type="checkbox"
+                        name="diving-course"
+                        value="try-diving"
+                      />
+                      <span class="form-wrapper__inquiry-text"
+                        >体験ダイビングについて</span
+                      >
                     </label>
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
                   <th class="form-wrapper__item">キャンペーン</th>
                   <td class="form-wrapper__body form-wrapper__body-5th">
-                      <select name="キャンペーン" class="form-wrapper__select">
-                        <option>キャンペーン内容を選択</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                    <select name="キャンペーン" class="form-wrapper__select">
+                      <option>キャンペーン内容を選択</option>
+                      <option>ここに入ります</option>
+                      <option>ここに入ります</option>
+                      <option>ここに入ります</option>
+                    </select>
                   </td>
                 </tr>
                 <tr class="form__wrapper form-wrapper">
-                  <th class="form-wrapper__item"><span>お問い合わせ内容</span></th>
-                  <td class="form-wrapper__body  form-wrapper__body-6th">
-                    <textarea  name="問い合わせ内容" class="form-wrapper__textarea"></textarea>
+                  <th class="form-wrapper__item">
+                    <span>お問い合わせ内容</span>
+                  </th>
+                  <td class="form-wrapper__body form-wrapper__body-6th">
+                    <textarea
+                      name="問い合わせ内容"
+                      class="form-wrapper__textarea"
+                    ></textarea>
                   </td>
                 </tr>
-
               </table>
-                <div class="form__private">
-                  <input type="checkbox" name="" id="private" />
-                  <label for="private" class="form__private-text">個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</label>
-                </div>
+              <div class="form__private">
+                <input type="checkbox" name="agreement" id="private" />
+                <label for="private" class="form__private-text"
+                  >個人情報の取り扱いについて同意のうえ<br
+                    class="u-mobile"
+                  />送信します。</label
+                >
+              </div>
               <div class="form__button">
-                <a href="./page-contact-thanks.html" class="button button-send"><span>Send</span></a>
+                <a href="./page-contact-thanks.html" class="button button-send"
+                  ><span>Send</span></a
+                >
               </div>
             </form>
           </div>
@@ -284,11 +353,11 @@
     <footer class="footer l-footer">
       <div class="footer__inner inner">
         <div class="footer__heading">
-          <h2 class="footer__logo">
+          <div class="footer__logo">
             <a href="index.html">
               <img src="./assets/images/common/footer-logo.svg" alt="CodeUps" />
             </a>
-          </h2>
+          </div>
           <ul class="footer__icon">
             <li class="footer__icon-facebook">
               <a href="#" target="_blank" rel="noopener noreferrer"
@@ -311,15 +380,21 @@
             <!-- キャンペーンコンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">キャンペーン</a>
+                <a href="./page-campaign.html">キャンペーン</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス取得</a></li>
               <li class="nav-group__item">
-                <a href="#">貸切体験ダイビング</a>
+                <a href="./page-campaign.html#license">ライセンス取得</a>
               </li>
-              <li class="nav-group__item"><a href="#">ナイトダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-campaign.html#private-booking"
+                  >貸切体験ダイビング</a
+                >
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-campaign.html#night-diving">ナイトダイビング</a>
+              </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">私たちについて</a>
+                <a href="./page-about.html">私たちについて</a>
               </li>
             </ul>
           </div>
@@ -327,13 +402,19 @@
             <!-- ダイビング情報コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="">ダイビング情報</a>
+                <a href="./page-info.html">ダイビング情報</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-              <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
-              <li class="nav-group__item"><a href="#">ファンダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">ライセンス講習</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">体験ダイビング</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-info.html">ファンダイビング</a>
+              </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">ブログ</a>
+                <a href="./page-blog.html">ブログ</a>
               </li>
             </ul>
           </div>
@@ -341,33 +422,39 @@
             <!-- お客様の声コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">お客様の声</a>
+                <a href="./page-voice.html">お客様の声</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">料金一覧</a>
+                <a href="./page-price.html">料金一覧</a>
               </li>
-              <li class="nav-group__item"><a href="#">ライセンス講習</a></li>
-              <li class="nav-group__item"><a href="#">体験ダイビング</a></li>
-              <li class="nav-group__item"><a href="#">ファンダイビング</a></li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#license">ライセンス講習</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#trial-diving">体験ダイビング</a>
+              </li>
+              <li class="nav-group__item">
+                <a href="./page-price.html#fun-diving">ファンダイビング</a>
+              </li>
             </ul>
           </div>
           <div class="nav-group__container nav-group__container--4">
             <!-- よくある質問コンテナ -->
             <ul class="nav-group__items">
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">よくある質問</a>
+                <a href="./page-faq.html">よくある質問</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#"
+                <a href="./page-privacy.html"
                   >プライバシー<br class="footer-md-none" />
                   <p class="nav-group__container4--indent">ポリシー</p>
                 </a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">利用規約</a>
+                <a href="./page-terms.html">利用規約</a>
               </li>
               <li class="nav-group__item nav-group__item--main">
-                <a href="#">お問い合わせ</a>
+                <a href="./page-contact.html">お問い合わせ</a>
               </li>
             </ul>
           </div>
