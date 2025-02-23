@@ -98,7 +98,7 @@
   color: $white;
 }
 
-.pagination__current a {
+.pagination__item.is-active a {
   background-color: $green;
   color: #fff;
   pointer-events: none;

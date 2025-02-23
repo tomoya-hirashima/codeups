@@ -13,7 +13,7 @@
 }
 
 .form-wrapper::after {
-  comtent: "";
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -46,7 +46,7 @@
   top: rem(1);
   right: rem(-69);
   display: inline-block;
-  width: rem(61);
+  width: rem(62);
   height: rem(21);
   background-color: $orange;
   padding: rem(2) rem(11) rem(2) rem(16);
@@ -109,14 +109,12 @@
 .form-wrapper__body.form-wrapper__body-6th {
   height: rem(200);
   overflow: scroll;
-  /*スクロールバー非表示（IE・Edge）*/
-  -ms-overflow-style: none;
   /*スクロールバー非表示（Firefox）*/
   scrollbar-width: none;
 }
 
-/*スクロールバー非表示（Chrome・Safari）*/
-.content::-webkit-scrollbar {
+/*スクロールバー非表示（Chrome・Safari・Edge）*/
+.form-wrapper__body::-webkit-scrollbar {
   display: none;
 }
 

@@ -126,22 +126,6 @@ $(function () {
     });
   });
 
-  // モーダル(about)
-  // $(function () {
-  //   const open = $(".js-modal-open"),
-  //   modal = $(".js-modal");
-
-  //   //開くボタンをクリックしたらモーダルを表示する
-  //   open.on("click", function () {
-  //     modal.addClass("is-open");
-  //   });
-
-  //   //モーダルをクリックしたら閉じる
-  //   modal.on("click", function () {
-  //     modal.removeClass("is-open");
-  //   });
-  // });
-
   $(function () {
     const $galleryItems = $(".js-modal-open");
     const $modal = $(".js-modal");
@@ -154,8 +138,8 @@ $(function () {
       $modal.addClass("is-open"); // モーダルを表示
     });
 
-    // モーダルの外側をクリックした際に閉じる
-    $modal.on("click", function (e) {
+    // 画像またはモーダルの外側をクリックした際に閉じる
+    $('.modal, .modal__img').on("click", function (e) {
       if (e.target === this) {
         $modal.removeClass("is-open");
         $modalImage.attr("src", "");
