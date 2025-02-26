@@ -6,7 +6,8 @@
 .page-sitemap-main__navigation.nav-group {
   @include mq("md") {
     grid-template-columns: 15.38% 13.89% 13.89% 16.85%;
-    grid-column-gap: rem(144);
+    grid-column-gap: 13.3%;
+    white-space: nowrap
   }
 }
 
