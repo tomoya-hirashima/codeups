@@ -10,7 +10,7 @@
   font-family: "Noto Sans JP", sans-serif;
   color: $green;
   text-align: center;
-  transition: 0.3s background-color;
+  transition: 0.3s background-color, 0.3s color;
 
   @include mq("md") {
     padding: rem(26) 0;

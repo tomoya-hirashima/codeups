@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.page-price-main {
+}
 
-// .page-price-main{
-// }
+.page-price-main__inner.inner {
+  max-width: rem(750);
+}

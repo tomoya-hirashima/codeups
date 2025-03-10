@@ -12,6 +12,7 @@
   opacity: 0;
   visibility: hidden;
   background: rgba(32, 32, 32, 80%);
+  cursor: pointer;
 }
 
 .modal.is-open {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: center;
 
+
   @include mq("md") {
   width: min(64%, rem(920));
   }
@@ -39,6 +41,14 @@
 .modal__img {
   height: 100%;
   object-fit: contain;
+  visibility: hidden;
+  transition: visibility 0s 0.2s; /* 0.2秒遅れて非表示に */
+}
+
+
+.modal.is-open .modal__img {
+  visibility: visible;
+  transition-delay: 0s; /* 表示時は遅延なし */
 }
 
 .fixed {

@@ -7,11 +7,6 @@
   position: relative;
 }
 
-.page-campaign-main__tab-group {
-  @include mq("md") {
-    max-width: rem(744);
-  }
-}
 
 .page-campaign-main__tab-contents {
   margin-top: rem(40);

@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.campaign-tabs{
+.tabs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 162px);
+  justify-content: center;
   column-gap: rem(21);
   row-gap: rem(16);
 
-
   @include mq("md") {
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: flex-start;
     column-gap: rem(32);
   }
 }

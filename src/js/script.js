@@ -113,52 +113,42 @@ $(function () {
   });
 
   //タブの切り替え(campaign)
-  $(function () {
-    const tabButton = $(".js-campaign-tab"),
-      tabContent = $(".js-tab-content");
-    tabButton.on("click", function () {
-      let index = tabButton.index(this);
+  // $(function () {
+  //   const tabButton = $(".js-tab"),
+  //     tabContent = $(".js-tab-content");
+  //   tabButton.on("click", function () {
+  //     let index = tabButton.index(this);
 
-      tabButton.removeClass("is-active");
-      $(this).addClass("is-active");
-      tabContent.removeClass("is-active");
-      tabContent.eq(index).addClass("is-active");
-    });
-  });
+  //     tabButton.removeClass("is-active");
+  //     $(this).addClass("is-active");
+  //     tabContent.removeClass("is-active");
+  //     tabContent.eq(index).addClass("is-active");
+  //   });
+  // });
 
   $(function () {
-    const $galleryItems = $(".js-modal-open");
-    const $modal = $(".js-modal");
-    const $modalImage = $(".modal__img");
+    var $galleryItems = $(".js-modal-open");
+    var $modal = $(".js-modal");
+    var $modalImage = $(".modal__img");
+    var $body = $("body");
 
     // 各ギャラリー画像をクリックしたらモーダルを開く
     $galleryItems.on("click", function () {
-      const imageUrl = $(this).attr("src"); // クリックした画像のURLを取得
+      var imageUrl = $(this).attr("src"); // クリックした画像のURLを取得
       $modalImage.attr("src", imageUrl); // モーダルの画像に設定
-      $modal.addClass("is-open"); // モーダルを表示
+      $modal.fadeIn(200).addClass("is-open"); // フェードインで表示
+      $body.addClass("fixed"); // 背景スクロール防止
     });
 
     // 画像またはモーダルの外側をクリックした際に閉じる
-    $('.modal, .modal__img').on("click", function (e) {
-      if (e.target === this) {
+    $('.modal, .modal__img').on("click", function () {
         $modal.removeClass("is-open");
-        $modalImage.attr("src", "");
-      }
+        $body.removeClass("fixed"); // 背景スクロールを許可
     });
   });
 
-  // モーダルウィンドウオープン時の背景固定
-  $(function () {
-    $(".js-modal-open").on("click", function () {
-      $("body").addClass("fixed");
-    });
-
-    $(".js-modal").on("click", function () {
-      $("body").removeClass("fixed");
-    });
-  });
-
-  //タブの切り替え(info)
+  // 【info ページ】
+  // タブの切り替え(info)
   $(function () {
     const infoTabButton = $(".js-info-tab"),
       infoTabContent = $(".js-info-tab-content");
@@ -172,6 +162,64 @@ $(function () {
     });
   });
 
+  // タブの切り替え・ページ遷移(info)
+  $(function () {
+    //タブへダイレクトリンクの実装
+    //リンクからハッシュを取得
+    var hash = location.hash;
+    hash = (hash.match(/^#info-tab-content\d+$/) || [])[0];
+
+    //リンクにハッシュが入っていればtabnameに格納
+    if ($(hash).length) {
+        var tabname = hash.slice(1);
+    } else {
+        var tabname = "info-tab-content1";
+    }
+
+    //コンテンツ非表示・タブを非アクティブ
+    $(".js-info-tab").removeClass("is-active");
+    $(".js-info-tab-content").removeClass("is-active");
+
+    //何番目のタブかを格納
+    var tabno = $(".js-info-tab-content#" + tabname).index();
+
+    //コンテンツ表示
+    $(".js-info-tab-content").eq(tabno).addClass("is-active");
+
+    //タブのアクティブ化
+    $(".js-info-tab").eq(tabno).addClass("is-active");
+});
+
+
+
+//   $(document).ready(function() {
+//     function openTab(hash) {
+//         $(".js-info-tab-content").removeClass("is-active");
+//         if (hash) {
+//             $(hash).addClass("is-active");
+//         } else {
+//             $("#info-tab1").addClass("is-active"); // デフォルトはタブ1
+//         }
+//     }
+
+//     // 最初にURLのハッシュを見てタブを開く
+//     openTab(location.hash);
+
+//     // タブをクリックしたときにハッシュを更新
+//     $(".tab-link").on("click", function(e) {
+//         e.preventDefault(); // 通常のリンク動作を防ぐ
+//         var target = $(this).attr("href");
+//         history.pushState(null, null, target); // URLを変更
+//         openTab(target);
+//     });
+
+//     // 戻るボタン対応
+//     $(window).on("hashchange", function() {
+//         openTab(location.hash);
+//     });
+// });
+
+  // 【blog ページ】
   //トグル展開(サイドバー)
   $(function () {
     $(".js-archive-year").on("click", function () {
